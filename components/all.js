@@ -6,3 +6,6 @@ import '/components/atoms/text-input.js'
 import '/components/layout/container.js'
 import '/components/layout/fixed-header.js'
 import '/components/layout/grid.js'
+
+// Molecules
+import '/components/molecules/brand.js'

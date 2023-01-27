@@ -1,0 +1,85 @@
+ :root {
+    /*
+     * Base Colors
+     */
+    --gray900: #101840;
+    --gray800: #474d66;
+    --gray700: #696f8c;
+    --gray600: #8f95b2;
+    --gray500: #c1c4d6;
+    --gray400: #d8dae5;
+    --gray300: #E6E8F0;
+    --gray200: #edeff5;
+    --gray100: #F4F5F9;
+    --gray90: #F4F6FA;
+    --gray75: #F9FAFC;
+    --gray50: #FAFBFF;
+    --white: #FFFFFF;
+
+    --blue900: #0A1433;
+    --blue800: #142966;
+    --blue700: #1F3D99;
+    --blue600: #2952CC;
+    --blue500: #3366FF;
+    --blue400: #5C85FF;
+    --blue300: #85A3FF;
+    --blue200: #ADC2FF;
+    --blue100: #D6E0FF;
+    --blue50: #EBF0FF;
+    --blue25: #F3F6FF;
+
+    --red700: #7D2828;
+    --red600: #A73636;
+    --red500: #D14343;
+    --red300: #EE9191;
+    --red100: #F9DADA;
+    --red25: #FDF4F4;
+
+    --green900: #10261E;
+    --green800: #214C3C;
+    --green700: #317159;
+    --green600: #429777;
+    --green500: #52BD95;
+    --green400: #75CAAA;
+    --green300: #97D7BF;
+    --green200: #BAE5D5;
+    --green100: #DCF2EA;
+    --green25: #F5FBF8;
+
+    --orange700: #996A13;
+    --orange500: #FFB020;
+    --orange100: #F8E3DA;
+    --orange25: #FFFAF2;
+
+    --purple600: #6E62B6;
+    --purple100: #E7E4F9;
+
+    --teal800: #0F5156;
+    --teal100: #D3F5F7;
+
+    --yellow800: #66460D;
+    --yellow100: #FFEFD2;
+
+    /* 
+     * Color Tokens 
+     */
+    --w-background-color: var(--gray75);
+    --w-text-color: var(--gray900);
+    --w-link-color: var(--blue500);
+    --w-link-hover-color: var(--blue700);
+
+    --w-muted-color: var(--gray700);
+    --w-muted-text-color: var(--gray900);
+
+    --w-primary-color: var(--blue500);
+    --w-primary-hover-color: var(--blue700);
+    --w-primary-text-color: var(--white);
+
+    --w-secondary-color: var(--blue300);
+    --w-secondary-hover-color: var(--blue400);
+    --w-secondary-text-color: var(--white);
+
+    --w-danger-color: var(--red500);
+    --w-danger-hover-color: var(--red600);
+    --w-danger-text-color: var(--white);
+ }
