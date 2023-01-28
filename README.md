@@ -24,3 +24,11 @@ Building a Design System based on Web Components can be a good idea for some pro
 
 However, it's worth noting that Web Components have a steeper learning curve than some other options, and they may not be the best choice for all projects. That's why this project is still an experiment.
 
+## Development
+
+To run a local development server, serve the current directory:
+
+```
+conda activate
+python -m http.server 
+```

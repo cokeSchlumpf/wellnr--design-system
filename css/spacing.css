@@ -1,7 +1,12 @@
 :root {
-    --w-spacing-s: 5px;
-    --w-spacing-m: 10px;
+    --w-spacing-s: 0.5em;
+    --w-spacing-m: 0.8em;
     --w-spacing-l: 1.1em;
     --w-spacing-xl: 1.5em;
     --w-spacing-xxl: 2em;
+
+    --w-spacing--page--vertical-space: var(--w-spacing-m);
+    --w-spacing--page--horizontal-space: var(--w-spacing-s);
+
+    --w-border-width--thin: 1px;
 }

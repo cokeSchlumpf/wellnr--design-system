@@ -64,6 +64,14 @@
      * Color Tokens 
      */
     --w-background-color: var(--gray75);
+    --w-background-color-300: var(--gray50);
+    --w-background-color-400: var(--gray75);
+    --w-background-color-500: var(--gray100);
+    --w-background-color-600: var(--gray200);
+    --w-background-color-700: var(--gray300);
+    --w-background-color-800: var(--gray400);
+    --w-background-color-900: var(--gray600);
+
     --w-text-color: var(--gray900);
     --w-link-color: var(--blue500);
     --w-link-hover-color: var(--blue700);

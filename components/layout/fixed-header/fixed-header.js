@@ -3,7 +3,7 @@ import {LitElement, css, html} from '/libs/lit-core.min.js';
 export class WFixedHeader extends LitElement {
     static styles = css`
         :host { 
-            min-height: 100%;
+            min-height: 100vh;
 
             display: flex;
             flex-direction: column;

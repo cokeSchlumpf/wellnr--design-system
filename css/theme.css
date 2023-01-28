@@ -1,168 +1,18 @@
-:root {
-    /* Spacing */
-    --content-spacing-base: 1rem;
-    --container--content-spacing: var(--content-spacing-base);
-    --box--content-spacing: var(--content-spacing-base);
+@import "/libs/normalize.css";
 
-    /* Colors */
-    --background-color: #fff;
-    --text-color: #333;
+@import "/css/colors.css";
+@import "/css/icons.css";
+@import "/css/spacing.css";
+@import "/css/typography.css";
 
-    --a-color: hsl(195deg, 85%, 41%);
-    --a-hover-color: hsl(195deg, 90%, 32%);
+@import "/components/all.css";
 
-    --muted-color: hsl(205deg, 10%, 50%);
-    --muted-text-color: var(--text-color);
-
-    --primary-color: hsl(195deg, 85%, 41%);
-    --primary-hover-color: hsl(195deg, 90%, 32%);
-    --primary-text-color: #fff;
-
-    --secondary-color: hsl(205deg, 20%, 32%);
-    --secondary-hover-color: #24333e;
-    --secondary-text-color: #fff;
-
-    --danger-color: #c62828;
-    --danger-hover-color: #a51818;
-    --danger-text-color: #fff;
-
-    /* Icons */
-    --icon-checkbox: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
-    --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(65, 84, 98)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    --icon-chevron-button: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    --icon-chevron-button-inverse: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    --icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(115, 130, 140)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
-    --icon-date: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(65, 84, 98)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
-    --icon-invalid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(198, 40, 40)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E");
-    --icon-minus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
-    --icon-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(65, 84, 98)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
-    --icon-time: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(65, 84, 98)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");
-    --icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(56, 142, 60)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
-    --icon-eye: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3E%3Csvg fill='%23000000' height='800px' width='800px' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 488.85 488.85' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M244.425,98.725c-93.4,0-178.1,51.1-240.6,134.1c-5.1,6.8-5.1,16.3,0,23.1c62.5,83.1,147.2,134.2,240.6,134.2 s178.1-51.1,240.6-134.1c5.1-6.8,5.1-16.3,0-23.1C422.525,149.825,337.825,98.725,244.425,98.725z M251.125,347.025 c-62,3.9-113.2-47.2-109.3-109.3c3.2-51.2,44.7-92.7,95.9-95.9c62-3.9,113.2,47.2,109.3,109.3 C343.725,302.225,302.225,343.725,251.125,347.025z M248.025,299.625c-33.4,2.1-61-25.4-58.8-58.8c1.7-27.6,24.1-49.9,51.7-51.7 c33.4-2.1,61,25.4,58.8,58.8C297.925,275.625,275.525,297.925,248.025,299.625z'/%3E%3C/g%3E%3C/svg%3E");
-
-
-    
-    --grid-spacing: var(--spacing);
-    --color: hsl(205deg, 20%, 32%);
-    --h1-color: hsl(205deg, 30%, 15%);
-    --h2-color: #24333e;
-    --h3-color: hsl(205deg, 25%, 23%);
-    --h4-color: #374956;
-    --h5-color: hsl(205deg, 20%, 32%);
-    --h6-color: #4d606d;
-    --muted-color: hsl(205deg, 10%, 50%);
-    --muted-border-color: hsl(205deg, 20%, 94%);
-    --primary: hsl(195deg, 85%, 41%);
-    --primary-hover: hsl(195deg, 90%, 32%);
-    --primary-focus: rgba(16, 149, 193, 0.125);
-    --primary-inverse: #fff;
-    --secondary: hsl(205deg, 15%, 41%);
-    --secondary-hover: hsl(205deg, 20%, 32%);
-    --secondary-focus: rgba(89, 107, 120, 0.125);
-    --secondary-inverse: #fff;
-    --contrast: hsl(205deg, 30%, 15%);
-    --contrast-hover: #000;
-    --contrast-focus: rgba(89, 107, 120, 0.125);
-    --contrast-inverse: #fff;
-    --mark-background-color: #fff2ca;
-    --mark-color: #543a26;
-    --ins-color: #388e3c;
-    --del-color: #c62828;
-    --blockquote-border-color: var(--muted-border-color);
-    --blockquote-footer-color: var(--muted-color);
-    --button-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    --button-hover-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    --form-element-background-color: transparent;
-    --form-element-border-color: hsl(205deg, 14%, 68%);
-    --form-element-color: var(--color);
-    --form-element-placeholder-color: var(--muted-color);
-    --form-element-active-background-color: transparent;
-    --form-element-active-border-color: var(--primary);
-    --form-element-focus-color: var(--primary-focus);
-    --form-element-disabled-background-color: hsl(205deg, 18%, 86%);
-    --form-element-disabled-border-color: hsl(205deg, 14%, 68%);
-    --form-element-disabled-opacity: 0.5;
-    --form-element-invalid-border-color: #c62828;
-    --form-element-invalid-active-border-color: #d32f2f;
-    --form-element-invalid-focus-color: rgba(211, 47, 47, 0.125);
-    --form-element-valid-border-color: #388e3c;
-    --form-element-valid-active-border-color: #43a047;
-    --form-element-valid-focus-color: rgba(67, 160, 71, 0.125);
-    --switch-background-color: hsl(205deg, 16%, 77%);
-    --switch-color: var(--primary-inverse);
-    --switch-checked-background-color: var(--primary);
-    --range-border-color: hsl(205deg, 18%, 86%);
-    --range-active-border-color: hsl(205deg, 16%, 77%);
-    --range-thumb-border-color: var(--background-color);
-    --range-thumb-color: var(--secondary);
-    --range-thumb-hover-color: var(--secondary-hover);
-    --range-thumb-active-color: var(--primary);
-    --table-border-color: var(--muted-border-color);
-    --table-row-stripped-background-color: #f6f8f9;
-    --code-background-color: hsl(205deg, 20%, 94%);
-    --code-color: var(--muted-color);
-    --code-kbd-background-color: var(--contrast);
-    --code-kbd-color: var(--contrast-inverse);
-    --code-tag-color: hsl(330deg, 40%, 50%);
-    --code-property-color: hsl(185deg, 40%, 40%);
-    --code-value-color: hsl(40deg, 20%, 50%);
-    --code-comment-color: hsl(205deg, 14%, 68%);
-    --accordion-border-color: var(--muted-border-color);
-    --accordion-close-summary-color: var(--color);
-    --accordion-open-summary-color: var(--muted-color);
-    --card-background-color: var(--background-color);
-    --card-border-color: var(--muted-border-color);
-    --card-box-shadow:
-        0.0145rem 0.029rem 0.174rem rgba(27, 40, 50, 0.01698),
-        0.0335rem 0.067rem 0.402rem rgba(27, 40, 50, 0.024),
-        0.0625rem 0.125rem 0.75rem rgba(27, 40, 50, 0.03),
-        0.1125rem 0.225rem 1.35rem rgba(27, 40, 50, 0.036),
-        0.2085rem 0.417rem 2.502rem rgba(27, 40, 50, 0.04302),
-        0.5rem 1rem 6rem rgba(27, 40, 50, 0.06),
-        0 0 0 0.0625rem rgba(27, 40, 50, 0.015);
-    --card-sectionning-background-color: #fbfbfc;
-    --dropdown-background-color: #fbfbfc;
-    --dropdown-border-color: #e1e6eb;
-    --dropdown-box-shadow: var(--card-box-shadow);
-    --dropdown-color: var(--color);
-    --dropdown-hover-background-color: hsl(205deg, 20%, 94%);
-    --modal-overlay-background-color: rgba(213, 220, 226, 0.7);
-    --progress-background-color: hsl(205deg, 18%, 86%);
-    --progress-color: var(--primary);
-    --loading-spinner-opacity: 0.5;
-    --tooltip-background-color: var(--contrast);
-    --tooltip-color: var(--contrast-inverse);
-
-    --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --line-height: 1.5;
-    --font-weight: 400;
-    --font-size: 16px;
-    --border-radius: 0.25rem;
-    --border-width: 1px;
-    --outline-width: 3px;
-    --spacing: 1rem;
-    --typography-spacing-vertical: 1.5rem;
-    --block-spacing-vertical: calc(var(--spacing) * 2);
-    --block-spacing-horizontal: var(--spacing);
-    --grid-spacing-vertical: 0;
-    --grid-spacing-horizontal: var(--spacing);
-    --form-element-spacing-vertical: 0.75rem;
-    --form-element-spacing-horizontal: 1rem;
-    --nav-element-spacing-vertical: 1rem;
-    --nav-element-spacing-horizontal: 0.5rem;
-    --nav-link-spacing-vertical: 0.5rem;
-    --nav-link-spacing-horizontal: 0.5rem;
-    --form-label-font-weight: var(--font-weight);
-    --transition: 0.2s ease-in-out;
-    --modal-overlay-backdrop-filter: blur(0.25rem);
+html {
+    height: 100%;
 }
 
-html,
-body {
-    background: var(--background-color);
-    font-family: var(--font-family);
-    font-weight: var(--font-weight);
-    font-size: var(--font-size);
-
-    color: var(--color);
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }

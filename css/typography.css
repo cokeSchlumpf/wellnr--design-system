@@ -1,5 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/inter.ttf");
+}
+
+@font-face {
+    font-family: "Source Code Pro";
+    src: url("/assets/fonts/sourcecode-pro.ttf");
+}
 
 :root {
-    --w-font-family-text: 
+    --w-font-family-text: "Inter", system-ui, sans-serif;
+    --w-font-weight-text-thin: 300;
+    --w-font-weight-text-regular: 400;
+    --w-font-weight-text-semibold: 600;
+    --w-font-weight-text-bold: 800;
+
+    --w-font-size-text-100: 0.8em;
+    --w-font-size-text-200: 0.8em;
+    --w-font-size-text-300: 0.8em;
+    --w-font-size-text-400: 1em;
+    --w-font-size-text-500: 1.2em;
+    --w-font-size-text-600: 1.4em;
+    --w-font-size-text-700: 1.6em;
+    --w-font-size-text-800: 1.8em;
+    --w-font-size-text-900: 2em;
+
+    --w-font-family-mono: "Source Code Pro", monospace;
+    --w-font-weight-mono-thin: 300;
+    --w-font-weight-mono-regular: 400;
+    --w-font-weight-mono-semibold: 600;
+    --w-font-weight-mono-bold: 800;
+
+    
+}
+
+html, body {
+    font-family: "Inter", system-ui, sans-serif;
+    font-weight: var(--w-font-weight-text-regular);
+    font-size: var(--w-font-size-text-400);
 }
