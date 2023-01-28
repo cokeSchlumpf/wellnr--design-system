@@ -1,6 +1,9 @@
 :root {
-    --w-navbar--horizontal-padding: var(--w-spacing--page--horizontal-space);
-    --w-navbar--vertical-padding: var(--w-spacing--page--vertical-space);
+    --w-navbar--size-s--horizontal-padding: var(--w-spacing--page--horizontal-space);
+    --w-navbar--size-s--vertical-padding: var(--w-spacing--page--vertical-space);
+
+    --w-navbar--size-m--horizontal-padding: var(--w-spacing--page--horizontal-space);
+    --w-navbar--size-m--vertical-padding: calc(var(--w-spacing--page--vertical-space) * 2);
 
     --w-navbar--contrast--background-color: var(--w-primary-color);
     

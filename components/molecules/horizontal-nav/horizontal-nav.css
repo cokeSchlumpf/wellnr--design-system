@@ -1,0 +1,9 @@
+:root {
+    --w-horizontal-nav--contrast--color: var(--w-primary-text-color-500);
+    --w-horizontal-nav--contrast--hover--color: var(--w-primary-text-color-300);
+    --w-horizontal-nav--contrast--active--color: var(--w-primary-text-color-300);
+
+    --w-horizontal-nav--shaded--color: var(--w-text-color-300);
+    --w-horizontal-nav--shaded--hover--color: var(--w-text-color-500);
+    --w-horizontal-nav--shaded--active--color: var(--w-primary-color);
+}

@@ -1,112 +1,39 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>wellnr.design-system</title>
 
-        <script type="module" src="/components/all.js"></script>
-        <script type="module" src="/docs/all.js"></script>
-
+        <link rel="stylesheet" href="libs/normalize.css" />
         <link rel="stylesheet" href="css/theme.css" />
+
+        <script type="module" src="/components/all.js"></script>
     </head>
     <body>
-        <w-heading-docs></w-heading-docs>
-        <!--
-        <w-container>
-            <h2>Atoms</h2>
-            <h3>Button</h3>
-            <w-button label="Primary"></w-button>
-            <w-button label="Secondary" kind="secondary"></w-button>
-            <w-button label="Tertiary" kind="tertiary"></w-button>
-            <w-button label="Danger" kind="danger"></w-button>
-            <w-button label="Ghost" kind="ghost"></w-button>
-            
-            <w-grid>
-                <w-grid-4x><w-button label="xl" size="xl" block="true"></w-button></w-grid-4x>
-                <w-grid-4x><w-button label="lg" size="lg" block="true"></w-button></w-grid-4x>
-                <w-grid-4x><w-button label="md" size="md" block="true"></w-button></w-grid-4x>
-                <w-grid-4x><w-button label="sm" size="sm" block="true"></w-button></w-grid-4x>
+        <w-fixed-header>
+            <header slot="header">
+                <w-navbar appearance="shaded" size="m">
+                    <a slot="item" href="/introduction" class="w-active">Introduction</a>
+                    <a slot="item" href="/foundations">Foundations</a>
+                    <a slot="item" href="/components">Components</a>
+                </w-navbar>
+            </header>
 
-                <w-grid-4x><w-button label="Disabled" block="true" disabled="true"></w-button></w-grid-4x>
-            </w-grid>
+            <nav slot="nav">
+                Hallo
+            </nav>
 
-            <h3>Text Input</h3>
+            <article slot="article">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </article>
 
-            <w-grid>
-                <w-grid-16x>
-                    <w-text-input placeholder="default style"></w-text-input>
-                </w-grid-16x>
+            <aside slot="aside">
+                Hallo Freunde.
+            </aside>
 
-                <w-grid-16x>
-                    <w-text-input placeholder="default style" value="with value"></w-text-input>
-                </w-grid-16x>
 
-                <w-grid-16x>
-                    <w-text-input placeholder="default style" value="with value (block)" block="true"></w-text-input>
-                </w-grid-16x>
-
-                <w-grid-16x>
-                    <w-text-input placeholder="default style" value="with value (block)" block="true" clearable="true" onChange="(e) => console.log('hallo', e.target)"></w-text-input>
-                </w-grid-16x>
-
-                <w-grid-16x>
-                    <w-text-input placeholder="invalid value" invalid="true"></w-text-input>
-                </w-grid-16x>
-
-                <w-grid-16x>
-                    <w-text-input placeholder="disabled" disabled="true"></w-text-input>
-                </w-grid-16x>
-
-                <w-grid-16x>
-                    <w-text-input placeholder="password" kind="password"></w-text-input>
-                </w-grid-16x>
-            </w-grid>
-
-            <h2>Layout</h2>
-            <h3>Grid</h3>
-
-            <w-grid>
-                <w-grid-16x>16</w-grid-16x>
-
-                <w-grid-8x>8</w-grid-8x>
-                <w-grid-4x>4</w-grid-4x>
-                <w-grid-2x>2</w-grid-2x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-
-                <w-grid-8x>8<br />foo</w-grid-8x>
-                <w-grid-8x>8</w-grid-8x>
-
-                <w-grid-4x>4</w-grid-4x>
-                <w-grid-4x>4</w-grid-4x>
-                <w-grid-4x>4</w-grid-4x>
-                <w-grid-4x>4</w-grid-4x>
-
-                <w-grid-2x>2</w-grid-2x>
-                <w-grid-2x>2</w-grid-2x>
-                <w-grid-2x>2</w-grid-2x>
-                <w-grid-2x>2</w-grid-2x>
-                <w-grid-2x>2</w-grid-2x>
-                <w-grid-2x>2</w-grid-2x>
-                <w-grid-2x>2</w-grid-2x>
-                <w-grid-2x>2</w-grid-2x>
-
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-                <w-grid-1x>1</w-grid-1x>
-            </w-grid>
-        </w-container>
-        -->
+            <footer slot="footer">
+                <p>Content for footer is here.</p>
+            </footer>
+        </w-fixed-header>
     </body>
 </html>

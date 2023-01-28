@@ -15,11 +15,33 @@ export class WFixedHeader extends LitElement {
             top: 0;
             background-color: var(--primary-color);
             overflow: auto;
+
+            flex-grow: 0;
         }
 
-        ::slotted(main) {
-            margin-left: auto;
-            margin-right: auto;
+        main {
+            flex-grow: 1;
+
+            display: flex;
+            dlex-direction: row;
+            justify-content: flex-start;
+
+            background-color: #ff0000;
+        }
+
+        ::slotted(nav) {
+            flex-grow: 0;
+            background-color: #ffff00;
+        }
+
+        ::slotted(article) {
+            flex-grow: 1;
+            background-color: #ff00ff;
+        }
+
+        ::slotted(aside) {
+            flex-grow: 0;
+            background-color: #00ff00;
         }
       
         ::slotted(footer) {
@@ -27,13 +49,20 @@ export class WFixedHeader extends LitElement {
             overflow: auto;
 
             margin-top: auto;
+            flex-grow: 0;
         }
     `
 
     render() {
         return html`
             <slot name="header"></slot>
-            <slot name="main"></slot>
+            
+            <main>
+                <slot name="nav"></slot>
+                <slot name="article"></slot>
+                <slot name="aside"></slot>
+            </main>
+
             <slot name="footer"></slot>
         `
     }
