@@ -8,7 +8,6 @@ import '/components/atoms/text-input.js';
 // Layout
 import '/components/layout/container.js';
 import '/components/layout/fixed-header/fixed-header.js';
-import '/components/layout/fixed-sidebar/fixed-sidebar.js';
 import '/components/layout/grid/grid.js';
 
 // Molecules

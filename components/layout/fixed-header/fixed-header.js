@@ -1,4 +1,5 @@
 import {LitElement, css, html} from '/libs/lit-core.min.js';
+import { classnames } from '/directives/classnames.js';
 
 export class WFixedHeader extends LitElement {
     static styles = css`
@@ -24,23 +25,30 @@ export class WFixedHeader extends LitElement {
             display: flex;
             dlex-direction: row;
             justify-content: flex-start;
-
-            background-color: #ff0000;
         }
 
         nav {
             flex-grow: 0;
-
+            margin: var()
             display: flex;
         }
 
         nav ::slotted(*) {
             flex-grow: 1;
+            height: 100%;
         }
 
         article {
             flex-grow: 1;
-            background-color: #ff00ff;
+            max-width: var(--w-fixed-header--article-max-width);
+        }
+
+        article.spacing-s {
+            margin: var(--w-fixed-header--spacing-s--horizontal-spacing) var(--w-fixed-header--spacing-s--vertical-spacing);
+        }
+
+        article.spacing-m {
+            margin: var(--w-fixed-header--spacing-m--horizontal-spacing) var(--w-fixed-header--spacing-m--vertical-spacing);
         }
 
         aside {
@@ -57,6 +65,19 @@ export class WFixedHeader extends LitElement {
         }
     `
 
+    static properties = {
+        spacing: {
+            type: String,
+            help: "Specifies spacings (margins, paddings, ...). Possible values are `s`, `m` and `none`."
+        }
+    };
+
+    constructor() {
+        super();
+        this.spacing = "s";
+    }
+
+
     render() {
         return html`
             <header>
@@ -68,11 +89,15 @@ export class WFixedHeader extends LitElement {
                     <slot name="nav"></slot>
                 </nav>
 
-                <article>
+                <article 
+                    class=${classnames({["spacing-" + this.spacing]: true })}>
+
                     <slot name="article"></slot>
                 </article>
 
-                <aside>
+                <aside
+                    class=${classnames({["spacing-" + this.spacing]: true })}>
+
                     <slot name="aside"></slot>
                 </aside>
             </main>

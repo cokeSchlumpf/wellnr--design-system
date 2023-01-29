@@ -9,14 +9,14 @@
         <script type="module" src="/components/all.js"></script>
     </head>
     <body>
-        <w-fixed-header>
+        <w-fixed-header spacing="m">
             <w-navbar appearance="shaded" size="m" slot="header">
                 <a slot="item" href="/introduction" class="w-active">Introduction</a>
                 <a slot="item" href="/foundations">Foundations</a>
                 <a slot="item" href="/components">Components</a>
             </w-navbar>
 
-            <w-navbar slot="nav" appearance="contrast" orientation="vertical" size="m">
+            <w-navbar slot="nav" appearance="shaded" orientation="vertical" size="m">
                 <a slot="item" href="/introduction" class="w-active">Introduction</a>
                 <a slot="item" href="/foundations">Foundations</a>
                 <a slot="item" href="/components">Components</a>
@@ -31,11 +31,9 @@
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </section>
 
-            <p slot="aside">
-                Hallo Freunde.
+            <p slot="footer">
+                Content for footer is here.
             </p>
-
-            <p slot="footer">Content for footer is here.</p>
         </w-fixed-header>
     </body>
 </html>

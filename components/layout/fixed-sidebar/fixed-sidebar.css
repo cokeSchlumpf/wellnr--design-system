@@ -1,7 +1,0 @@
-:root {
-    --w-fixed-sidebar--size-s--horizontal-padding: var(--w-spacing--page--horizontal-space);
-    --w-fixed-sidebar--size-s--vertical-padding: var(--w-spacing--page--vertical-space);
-
-    --w-fixed-sidebar--size-m--horizontal-padding: var(--w-spacing--page--horizontal-space);
-    --w-fixed-sidebar--size-m--vertical-padding: calc(var(--w-spacing--page--vertical-space) * 2);
-}

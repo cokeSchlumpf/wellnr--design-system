@@ -13,6 +13,11 @@ export class WNavbar extends LitElement {
             background-color: var(--w-navbar--contrast--background-color);
         }
 
+        .container.horizontal {
+            display: border-box;
+            width: 100%;
+        }
+
         .container.horizontal.size-s {
             padding: var(--w-navbar--size-s--vertical-padding) var(--w-navbar--size-s--horizontal-padding);
         }
@@ -33,14 +38,14 @@ export class WNavbar extends LitElement {
             
         }
 
-        .container.vertical.size-m {
-            width: calc((100vw - 2 * var(--w-navbar--size-m--horizontal-padding)) / 4 - 2 * var(--w-navbar--size-m--horizontal-padding));
-            padding: var(--w-navbar--size-m--vertical-padding) var(--w-navbar--size-m--horizontal-padding);
+        .container.vertical.size-s {
+            width: calc((100vw - 2 * var(--w-navbar--size-s--horizontal-padding)) / 16 * 3 - 2 * var(--w-navbar--size-m--horizontal-padding));
+            padding: var(--w-navbar--size-s--vertical-padding) var(--w-navbar--size-s--horizontal-padding);
         }
 
-        .container.vertical.size-s {
-            width: calc((100vw - 2 * var(--w-navbar--size-s--horizontal-padding)) / 4 - 2 * var(--w-navbar--size-m--horizontal-padding));
-            padding: var(--w-navbar--size-s--vertical-padding) var(--w-navbar--size-s--horizontal-padding);
+        .container.vertical.size-m {
+            width: calc((100vw - 2 * var(--w-navbar--size-m--horizontal-padding)) / 16 * 3 - 2 * var(--w-navbar--size-m--horizontal-padding));
+            padding: var(--w-navbar--size-m--vertical-padding) var(--w-navbar--size-m--horizontal-padding);
         }
     `
 
@@ -81,23 +86,23 @@ export class WNavbar extends LitElement {
                     })}>
 
                     <w-grid>
-                        <w-grid-4x>
+                        <w-grid-item lg="3">
                             <w-brand 
                                 appearance="${this.appearance}"
                                 logo="/assets/images/logo/logo.svg"
                                 app="Design System." 
                                 brand="wellnr."></w-brand>
-                        </w-grid-4x>
+                        </w-grid-item>
 
-                        <w-grid-8x>
+                        <w-grid-item lg="10">
                             <w-horizontal-nav class="main-nav" appearance="${this.appearance}">
                                 <slot name="item" slot="item"></slot>
                             </w-horizontal-nav>
-                        </w-grid-8x>
+                        </w-grid-item>
 
-                        <w-grid-4x>
+                        <w-grid-item lg="3">
                             <slot name="controls"></slot>
-                        </w-grid-4x>
+                        </w-grid-item>
                     </w-grid>
                 </div>
             `

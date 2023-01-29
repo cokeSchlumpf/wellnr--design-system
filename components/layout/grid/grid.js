@@ -3,7 +3,7 @@ import {LitElement, css, html} from '/libs/lit-core.min.js';
 export class WGrid extends LitElement {
 
     static styles = css`
-        div {
+        :host {
             display: grid;
             grid-template-columns: var(--w-grid-template-columns);
         }
@@ -147,9 +147,7 @@ export class WGrid extends LitElement {
   
     render() {
       return html`
-        <div>
-            <slot></slot>
-        </div>
+        <slot></slot>
       `;
     }
 
