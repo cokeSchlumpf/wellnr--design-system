@@ -28,7 +28,50 @@
             </w-navbar>
 
             <section slot="article">
+                <h3>Components</h3>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </section>
+
+            <section slot="article">
+                <w-markdown>
+                    ### Atoms
+
+                    #### Heading
+
+                    The `Heading` component is used for all headings. The appearance can be influenced by `is` and `size` attributes.
+
+                    `is` specifies the element which is rendered. If no  `size` is specified, the size will be derived from `is`.
+                </w-markdown>
+
+
+                <w-tabs>
+                    <w-tab>Foo</w-tab>
+                    <w-tab active="true">Bar</w-tab>
+                    <w-tab>Lorem</w-tab>
+                    <w-tab>Ipsum</w-tab>
+                </w-tabs>
+                <p>...</p>
+                <w-tabs appearance="light-contrast">
+                    <w-tab>Foo</w-tab>
+                    <w-tab active="true">Bar</w-tab>
+                    <w-tab>Lorem</w-tab>
+                    <w-tab>Ipsum</w-tab>
+                </w-tabs>
+                <p>...</p>
+                <w-tabs appearance="shaded">
+                    <w-tab>Foo</w-tab>
+                    <w-tab active="true">Bar</w-tab>
+                    <w-tab>Lorem</w-tab>
+                    <w-tab>Ipsum</w-tab>
+                </w-tabs>
+                <!--
+                <w-heading is="h6">h6: The quick brown fox jumps over the lazy dog</w-heading>
+                <w-heading is="h5">h5: The quick brown fox jumps over the lazy dog</w-heading>
+                <w-heading is="h4">h4: The quick brown fox jumps over the lazy dog</w-heading>
+                <w-heading is="h3">h3: The quick brown fox jumps over the lazy dog</w-heading>
+                <w-heading is="h2">h2: The quick brown fox jumps over the lazy dog</w-heading>
+                <w-heading is="h1">h1: The quick brown fox jumps over the lazy dog</w-heading>
+                -->
             </section>
 
             <w-footer slot="footer" spacing="m" appearance="light-contrast">

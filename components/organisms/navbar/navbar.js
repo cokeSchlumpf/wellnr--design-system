@@ -28,6 +28,7 @@ export class WNavbar extends LitElement {
         
         .container.horizontal.shaded {
             border-bottom: var(--w-navbar--shaded--border-bottom--width) solid var(--w-navbar--shaded--border-bottom--color);
+            background-color: var(--w-navbar--shaded--background-color);
         }
 
         .container.horizontal w-horizontal-nav.main-nav {

@@ -18,6 +18,6 @@ html, body {
     padding: 0;
 }
 
-p:first-child {
+section :first-child {
     margin-top: 0;
 }

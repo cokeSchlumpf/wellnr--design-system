@@ -1,5 +1,7 @@
 /* Atoms */
 @import "/components/atoms/heading/tokens.css";
+@import "/components/atoms/markdown/markdown.css";
+@import "/components/atoms/tabs/tabs.css";
 
 /* Layouts */
 @import "/components/layout/fixed-header/fixed-header.css";

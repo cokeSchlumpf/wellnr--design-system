@@ -1,0 +1,45 @@
+:root {
+    --w-tab--padding-left: 20px;
+    --w-tab--padding-right: 80px;
+    --w-tabs--border-bottom-width: 2px;
+    --w-tabs--border-right-width: 1px;
+
+    --w-tabs--height: 3em;
+    --w-tabs--transition: all 300ms linear;
+
+    --w-tabs--contrast--background-color: var(--w-primary-color);
+    --w-tabs--contrast--border-bottom-color: var(--w-primary-color);
+    --w-tabs--contrast--tab--color: var(--w-primary-text-color-500);
+    --w-tabs--contrast--tab--background-color: var(--w-primary-color);
+    --w-tabs--contrast--tab--border-bottom-color: var(--w-primary-color);
+    --w-tabs--contrast--tab--border-right-color: var(--w-background-color-900);
+    --w-tabs--contrast--tab--hover--color: var(--w-primary-text-color-400);
+    --w-tabs--contrast--tab--hover--background-color: var(--w-primary-hover-color);
+    --w-tabs--contrast--tab--active--color: var(--w-text-color);
+    --w-tabs--contrast--tab--active--background-color: var(--w-background-color);
+    --w-tabs--contrast--tab--active--border-bottom-color: var(--w-background-color);
+
+    --w-tabs--light-contrast--background-color: var(--w-background-color-500);
+    --w-tabs--light-contrast--border-bottom-color: var(--w-primary-color);
+    --w-tabs--light-contrast--tab--color: var(--w-text-color);
+    --w-tabs--light-contrast--tab--background-color: var(--w-background-color-500);
+    --w-tabs--light-contrast--tab--border-bottom-color: var(--w-primary-color);
+    --w-tabs--light-contrast--tab--border-right-color: var(--w-background-color-500);
+    --w-tabs--light-contrast--tab--hover--color: var(--w-text-color-500);
+    --w-tabs--light-contrast--tab--hover--background-color: var(--w-background-color-600);
+    --w-tabs--light-contrast--tab--active--color: var(--w-primary-text-color);
+    --w-tabs--light-contrast--tab--active--background-color: var(--w-primary-color);
+    --w-tabs--light-contrast--tab--active--border-bottom-color: var(--w-primary-color);
+
+    --w-tabs--shaded--background-color: var(--w-background-color);
+    --w-tabs--shaded--border-bottom-color: var(--w-background-color-800);
+    --w-tabs--shaded--tab--color: var(--w-text-color-300);
+    --w-tabs--shaded--tab--background-color: var(--w-background-color);
+    --w-tabs--shaded--tab--border-bottom-color: var(--w-primary-color-900);
+    --w-tabs--shaded--tab--border-right-color: var(--w-background-color);
+    --w-tabs--shaded--tab--hover--color: var(--w-text-color-500);
+    --w-tabs--shaded--tab--hover--background-color: var(--w-background-color);
+    --w-tabs--shaded--tab--active--color: var(--w-primary-color);
+    --w-tabs--shaded--tab--active--background-color: var(--w-background-color);
+    --w-tabs--shaded--tab--active--border-bottom-color: var(--w-primary-color);
+}
