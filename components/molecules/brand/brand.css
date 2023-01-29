@@ -1,6 +1,6 @@
 :root {
     --w-brand--logo--height: 2.5em;
-    --w-brand--logo--margin-right: var(--w-spacing-s);
+    --w-brand--logo--margin-right: var(--w-spacing-200);
     --w-brand--font-weight: var(--w-font-weight-text-semibold);
 
     --w-brand--contrast--color: var(--w-primary-text-color);

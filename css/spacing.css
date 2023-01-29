@@ -1,13 +1,19 @@
 :root {
-    --w-spacing-xs: 0.4em;
-    --w-spacing-s: 0.6em;
-    --w-spacing-m: 1em;
-    --w-spacing-l: 1.2em;
-    --w-spacing-xl: 1.6em;
-    --w-spacing-xxl: 2em;
+    --w-spacing-100: 0.4em;
+    --w-spacing-200: 0.6em;
+    --w-spacing-300: 1em;
+    --w-spacing-400: 1.2em;
+    --w-spacing-500: 1.6em;
+    --w-spacing-600: 2em;
 
-    --w-spacing--page--vertical-space: var(--w-spacing-m);
-    --w-spacing--page--horizontal-space: var(--w-spacing-xxl);
+    --w-spacing--page--vertical-space: var(--w-spacing-300);
+    --w-spacing--page--horizontal-space: var(--w-spacing-600);
 
     --w-border-width--thin: 1px;
+
+    /*
+     * If increasing column number to a value > 16, /components/layout/grid/grid.js must be adopted as well.
+     */
+    --w-grid-columns: 16;
+    --w-grid-template-columns: repeat(var(--w-grid-columns), 1fr [col]);
 }

@@ -19,7 +19,7 @@ export class WHorizontalNav extends LitElement {
 
         nav ::slotted(a) {
             display: inline-block;
-            margin-right: var(--w-spacing-xl);
+            margin-right: var(--w-spacing-500);
 
             text-decoration: none;
             transition: all 300ms linear;

@@ -1,5 +1,6 @@
 @import "/libs/normalize.css";
 
+@import "/css/breakpoints.css";
 @import "/css/colors.css";
 @import "/css/icons.css";
 @import "/css/spacing.css";

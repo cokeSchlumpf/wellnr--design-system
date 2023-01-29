@@ -1,0 +1,14 @@
+/* 
+ * Note: Breakpoint values are also hardcoded in /components/layout/grid/grid.js.
+ * 
+ * These variables are here for reference. Unfortunately, as of today, media queries
+ * can not use these variables.
+ */
+:root {
+    --w-breakpoint-sm: 576px;
+    --w-breakpoint-md: 768px;
+    --w-breakpoint-lg: 992px;
+    --w-breakpoint-xl: 1200px;
+    --w-breakpoint-xxl: 1400px;
+    --w-breakpoint-xxxl: 2600px;
+}

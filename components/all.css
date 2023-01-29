@@ -4,6 +4,7 @@
 /* Layouts */
 @import "/components/layout/fixed-header/tokens.css";
 @import "/components/layout/fixed-sidebar/fixed-sidebar.css";
+@import "/components/layout/grid/grid.css";
 
 /* Molecules */
 @import "/components/molecules/brand/brand.css";

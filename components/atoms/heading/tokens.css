@@ -9,13 +9,13 @@
     --w--heading--size-800--font-size: var(--w-font-size-text-800);
     --w--heading--size-900--font-size: var(--w-font-size-text-900);
 
-    --w--heading--size-100--margin-top: var(--w-spacing-s);
-    --w--heading--size-200--margin-top: var(--w-spacing-m);
-    --w--heading--size-300--margin-top: var(--w-spacing-m);
-    --w--heading--size-400--margin-top: var(--w-spacing-m);
-    --w--heading--size-500--margin-top: var(--w-spacing-l);
-    --w--heading--size-600--margin-top: var(--w-spacing-l);
-    --w--heading--size-700--margin-top: var(--w-spacing-l);
-    --w--heading--size-800--margin-top: var(--w-spacing-xl);
-    --w--heading--size-900--margin-top: var(--w-spacing-xl);
+    --w--heading--size-100--margin-top: var(--w-spacing-200);
+    --w--heading--size-200--margin-top: var(--w-spacing-300);
+    --w--heading--size-300--margin-top: var(--w-spacing-300);
+    --w--heading--size-400--margin-top: var(--w-spacing-300);
+    --w--heading--size-500--margin-top: var(--w-spacing-400);
+    --w--heading--size-600--margin-top: var(--w-spacing-400);
+    --w--heading--size-700--margin-top: var(--w-spacing-400);
+    --w--heading--size-800--margin-top: var(--w-spacing-500);
+    --w--heading--size-900--margin-top: var(--w-spacing-500);
 }

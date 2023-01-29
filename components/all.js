@@ -9,7 +9,7 @@ import '/components/atoms/text-input.js';
 import '/components/layout/container.js';
 import '/components/layout/fixed-header/fixed-header.js';
 import '/components/layout/fixed-sidebar/fixed-sidebar.js';
-import '/components/layout/grid.js';
+import '/components/layout/grid/grid.js';
 
 // Molecules
 import '/components/molecules/brand/brand.js';

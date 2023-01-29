@@ -24,7 +24,7 @@ export class WVerticalNav extends LitElement {
             display: block;
             width: 100%;
             background-color: #ffff00;
-            margin-bottom: var(--w-spacing-s);
+            margin-bottom: var(--w-spacing-200);
 
             text-decoration: none;
             transition: all 300ms linear;
