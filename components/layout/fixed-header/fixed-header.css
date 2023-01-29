@@ -1,5 +1,6 @@
 :root {
-    --w-fixed-header--article-max-width: var(--w-breakpoint-xxl);
+    --w-fixed-header--article-max-width: var(--w-breakpoint-xl);
+
     --w-fixed-header--spacing-s--horizontal-spacing: var(--w-spacing--page--horizontal-space);
     --w-fixed-header--spacing-s--vertical-spacing: var(--w-spacing--page--vertical-space);
 

@@ -11,4 +11,5 @@
 @import "/components/molecules/vertical-nav/vertical-nav.css";
 
 /* Organisms */
+@import "/components/organisms/footer/footer.css";
 @import "/components/organisms/navbar/navbar.css";

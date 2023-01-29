@@ -1,0 +1,17 @@
+:root {
+    --w-footer--spacing-s--horizontal-spacing: var(--w-spacing--page--horizontal-space);
+    --w-footer--spacing-s--vertical-spacing: var(--w-spacing--page--vertical-space);
+
+    --w-footer--spacing-m--horizontal-spacing: var(--w-spacing--page--horizontal-space);
+    --w-footer--spacing-m--vertical-spacing: calc(var(--w-spacing--page--vertical-space) * 2);
+
+    --w-footer--contrast--background-color: var(--w-primary-color);
+    --w-footer--contrast--color: var(--w-primary-text-color);
+
+    --w-footer--light-contrast--background-color: var(--w-background-color-800);
+    --w-footer--light-contrast--color: var(--w-text-color);
+    
+    --w-footer--shaded--border-top--color: var(--w-background-color-800);
+    --w-footer--shaded--border-top--width: var(--w-border-width--thin);
+    --w-footer--shaded--color: var(--w-text-color-300);
+}

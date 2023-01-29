@@ -16,4 +16,5 @@ import '/components/molecules/horizontal-nav/horizontal-nav.js';
 import '/components/molecules/vertical-nav/vertical-nav.js';
 
 // Organisms
+import '/components/organisms/footer/footer.js';
 import '/components/organisms/navbar/navbar.js';
