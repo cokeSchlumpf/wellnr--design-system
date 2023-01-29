@@ -10,30 +10,32 @@
     </head>
     <body>
         <w-fixed-header>
-            <header slot="header">
-                <w-navbar appearance="shaded" size="m">
-                    <a slot="item" href="/introduction" class="w-active">Introduction</a>
-                    <a slot="item" href="/foundations">Foundations</a>
-                    <a slot="item" href="/components">Components</a>
-                </w-navbar>
-            </header>
+            <w-navbar appearance="shaded" size="m" slot="header">
+                <a slot="item" href="/introduction" class="w-active">Introduction</a>
+                <a slot="item" href="/foundations">Foundations</a>
+                <a slot="item" href="/components">Components</a>
+            </w-navbar>
 
-            <nav slot="nav">
-                Hallo
-            </nav>
+            <w-navbar slot="nav" appearance="contrast" orientation="vertical" size="m">
+                <a slot="item" href="/introduction" class="w-active">Introduction</a>
+                <a slot="item" href="/foundations">Foundations</a>
+                <a slot="item" href="/components">Components</a>
+            
+                <w-vertical-nav--title slot="item">Some Title</w-vertical-nav--title>
+                <a slot="item" href="/introduction" class="w-active">Introduction</a>
+                <a slot="item" href="/foundations">Foundations</a>
+                <a slot="item" href="/components">Components</a>
+            </w-navbar>
 
-            <article slot="article">
+            <section slot="article">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </article>
+            </section>
 
-            <aside slot="aside">
+            <p slot="aside">
                 Hallo Freunde.
-            </aside>
+            </p>
 
-
-            <footer slot="footer">
-                <p>Content for footer is here.</p>
-            </footer>
+            <p slot="footer">Content for footer is here.</p>
         </w-fixed-header>
     </body>
 </html>

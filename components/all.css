@@ -8,6 +8,7 @@
 /* Molecules */
 @import "/components/molecules/brand/brand.css";
 @import "/components/molecules/horizontal-nav/horizontal-nav.css";
+@import "/components/molecules/vertical-nav/vertical-nav.css";
 
 /* Organisms */
 @import "/components/organisms/navbar/navbar.css";

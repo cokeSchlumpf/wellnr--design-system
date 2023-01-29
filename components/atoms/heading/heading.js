@@ -56,6 +56,7 @@ export class WHeading extends LitElement {
             type: String,
             help: "The type of the tag. Possible values are `h1`, `h2`, `h3`, `h4`, `h5` or `h6`. Default is `h1`."
         },
+
         size: {
             type: Number,
             help: "The size of the heading. Possible values are `100`, `200`, `300`, `400`, `500`, `600`, `800`, or `900`. If not set, the size will be derived based on `is`."

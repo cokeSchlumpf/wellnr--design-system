@@ -14,6 +14,7 @@ import '/components/layout/grid.js';
 // Molecules
 import '/components/molecules/brand/brand.js';
 import '/components/molecules/horizontal-nav/horizontal-nav.js';
+import '/components/molecules/vertical-nav/vertical-nav.js';
 
 // Organisms
 import '/components/organisms/navbar/navbar.js';
