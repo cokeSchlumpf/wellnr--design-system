@@ -23,7 +23,6 @@ export class WVerticalNav extends LitElement {
         nav ::slotted(a) {
             display: block;
             width: 100%;
-            background-color: #ffff00;
             margin-bottom: var(--w-spacing-200);
 
             text-decoration: none;
