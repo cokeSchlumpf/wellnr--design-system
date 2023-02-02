@@ -13,6 +13,11 @@
     --w-border-width--regular: 2px;
 
     --w-border-radius-100: 0.2em;
+    --w-border-radius-200: 0.4em;
+    --w-border-radius-300: 0.6em;
+    --w-border-radius-400: 0.8em;
+    --w-border-radius-500: 1em;
+
 
     /*
      * If increasing column number to a value > 16, /components/layout/grid/grid.js must be adopted as well.

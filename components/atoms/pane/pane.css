@@ -1,4 +1,5 @@
 :root {
+    --w-pane--border-radius: var(--w-border-radius-200);
     --w-pane--spacing-s--padding: var(--w-spacing-300);
     --w-pane--spacing-m--padding: var(--w-spacing-400);
 

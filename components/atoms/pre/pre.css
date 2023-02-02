@@ -1,0 +1,9 @@
+:root {
+    --w-pre--background-color: var(--w-text-color);
+    --w-pre--color: var(--w-background-color);
+    --w-pre--padding: var(--w-spacing-100) var(--w-spacing-200);
+
+    --w-pre--font-family: var(--w-font-family-mono);
+    --w-pre--font-weight: var(--w-font-weight-mono-regular);
+    --w-pre--font-size: var(--w-font-size-text-400);
+}

@@ -5,7 +5,9 @@ export class WPane extends LitElement {
 
     static styles = css`
         :host {
-            display: block;   
+            display: block;
+            border-radius: var(--w-pane--border-radius);
+            overflow: hidden;
         }
         
         :host([spacing="s"]) {
@@ -26,6 +28,7 @@ export class WPane extends LitElement {
             type: Number,
             help: "Indicates how much the pane should look 'elevated'. Possible values are `400`, `500` and `600`. Default is `500` which means no elevation."
         },
+
         spacing: {
             type: String,
             help: "The spacing of the inner content to the border of the pane (padding). Possible values are `none`, `s` and `m`."
