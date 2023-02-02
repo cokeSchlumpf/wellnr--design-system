@@ -1,6 +1,7 @@
 /* Atoms */
-@import "/components/atoms/heading/tokens.css";
+@import "/components/atoms/heading/heading.css";
 @import "/components/atoms/markdown/markdown.css";
+@import "/components/atoms/pane/pane.css";
 @import "/components/atoms/tabs/tabs.css";
 
 /* Layouts */
@@ -9,8 +10,10 @@
 
 /* Molecules */
 @import "/components/molecules/brand/brand.css";
+@import "/components/molecules/css-rules-table/css-rules-table.css";
 @import "/components/molecules/horizontal-nav/horizontal-nav.css";
 @import "/components/molecules/vertical-nav/vertical-nav.css";
+@import "/components/molecules/element-properties-table/element-properties-table.css";
 
 /* Organisms */
 @import "/components/organisms/footer/footer.css";

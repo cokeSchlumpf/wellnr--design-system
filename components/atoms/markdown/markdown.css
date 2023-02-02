@@ -1,0 +1,4 @@
+:root {
+    --w-markdown--spacing-s--margin-top: var(--w-spacing-300);
+    --w-markdown--spacing-s--margin-bottom: var(--w-spacing-300);
+}

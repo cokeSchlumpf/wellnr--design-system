@@ -1,0 +1,7 @@
+:root {
+    --w-pane--spacing-s--padding: var(--w-spacing-300);
+    --w-pane--spacing-m--padding: var(--w-spacing-400);
+
+    --w-pane--elevation-500--border-width: var(--w-border-width--thin);
+    --w-pane--elevation-500--border-color: var(--w-background-color-800);
+}

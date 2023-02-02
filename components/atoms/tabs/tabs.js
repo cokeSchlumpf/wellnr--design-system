@@ -192,7 +192,7 @@ export class WTabPane extends LitElement {
     }
 
     _renderTab(tab) {
-        const name = tab.getAttribute('name');
+        const name = tab.getAttribute('slot');
         const label = tab.getAttribute('label');
 
         if (!name) {
@@ -210,12 +210,10 @@ export class WTabPane extends LitElement {
     }
 
     _renderContent(tabs) {
-        const selected = tabs.filter(tab => tab.getAttribute('name') && tab.getAttribute('name').toLowerCase() == this.active.toLowerCase())
+        const selected = tabs.filter(tab => tab.getAttribute('slot') && tab.getAttribute('slot').toLowerCase() == this.active.toLowerCase())
 
         if (selected.length > 0) {
-            const wrapper = document.createElement("test", )
-            wrapper.innerHTML = selected[0].innerHTML;
-            return Array.from(wrapper.childNodes);
+            return html`<slot name="${selected[0].getAttribute('slot')}"></slot>`;
         }
     }
 
@@ -236,7 +234,7 @@ export class WTabPane extends LitElement {
 export class WTabPaneItem extends LitElement {
 
     static properties = {
-        name: {
+        slot: {
             type: String,
             help: "The name of the tab. This name will be used when dispatching events from Tabs component."
         },
@@ -247,7 +245,7 @@ export class WTabPaneItem extends LitElement {
     };
 
     render() {
-        return html``
+        return html`<slot></slot>`
     }
 
 }

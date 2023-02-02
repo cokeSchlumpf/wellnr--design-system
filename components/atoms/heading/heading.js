@@ -6,48 +6,59 @@ export class WHeading extends LitElement {
 
     static styles = css`
         .size-100 {
-            font-size: var(--w--heading--size-100--font-size);
-            margin: var(--w--heading--size-100--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-100--font-size);
+            margin: var(--w-heading--size-100--margin-top) 0 0 0;
         }
 
         .size-200 {
-            font-size: var(--w--heading--size-200--font-size);
-            margin: var(--w--heading--size-200--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-200--font-size);
+            margin: var(--w-heading--size-200--margin-top) 0 0 0;
         }
 
         .size-300 {
-            font-size: var(--w--heading--size-300--font-size);
-            margin: var(--w--heading--size-300--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-300--font-size);
+            margin: var(--w-heading--size-300--margin-top) 0 0 0;
         }
 
         .size-400 {
-            font-size: var(--w--heading--size-400--font-size);
-            margin: var(--w--heading--size-400--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-400--font-size);
+            margin: var(--w-heading--size-400--margin-top) 0 0 0;
         }
 
         .size-500 {
-            font-size: var(--w--heading--size-500--font-size);
-            margin: var(--w--heading--size-500--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-500--font-size);
+            margin: var(--w-heading--size-500--margin-top) 0 0 0;
         }
 
         .size-600 {
-            font-size: var(--w--heading--size-600--font-size);
-            margin: var(--w--heading--size-600--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-600--font-size);
+            margin: var(--w-heading--size-600--margin-top) 0 0 0;
         }
 
         .size-700 {
-            font-size: var(--w--heading--size-700--font-size);
-            margin: var(--w--heading--size-700--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-700--font-size);
+            margin: var(--w-heading--size-700--margin-top) 0 0 0;
         }
 
         .size-800 {
-            font-size: var(--w--heading--size-800--font-size);
-            margin: var(--w--heading--size-800--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-800--font-size);
+            margin: var(--w-heading--size-800--margin-top) 0 0 0;
         }
 
         .size-900 {
-            font-size: var(--w--heading--size-900--font-size);
-            margin: var(--w--heading--size-900--margin-top) 0 0 0;
+            font-size: var(--w-heading--size-900--font-size);
+            margin: var(--w-heading--size-900--margin-top) 0 0 0;
+        }
+
+        h5 {
+            color: var(--w-muted-color);
+        }
+        
+        h6 {
+            font-weight: var(--w-font-weight-text-regular);
+            color: var(--w-muted-color);
+            text-decoration: underline;
+            
         }
     `;
 
@@ -80,9 +91,9 @@ export class WHeading extends LitElement {
         } else if (this.is == "h4") {
             return 400;
         } else if (this.is == "h5") {
-            return 300;
+            return 400;
         } else if (this.is == "h6") {
-            return 200;
+            return 400;
         } else {
             return 400;
         }

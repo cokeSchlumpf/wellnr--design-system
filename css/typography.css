@@ -30,12 +30,4 @@
     --w-font-weight-mono-regular: 400;
     --w-font-weight-mono-semibold: 600;
     --w-font-weight-mono-bold: 800;
-
-    
-}
-
-html, body {
-    font-family: "Inter", system-ui, sans-serif;
-    font-weight: var(--w-font-weight-text-regular);
-    font-size: var(--w-font-size-text-400);
 }
