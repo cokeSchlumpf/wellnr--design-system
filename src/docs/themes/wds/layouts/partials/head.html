@@ -6,14 +6,14 @@
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
 
-    <script defer="defer" src="/js/runtime.wds.js"></script>
-    <script defer="defer" src="/js/main.wds.js"></script>
+    <script defer="defer" src="{{ .Site.BaseURL }}js/runtime.wds.js"></script>
+    <script defer="defer" src="{{ .Site.BaseURL }}js/main.wds.js"></script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon/favicon-48.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
-    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ .Site.BaseURL }}assets/favicon/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}assets/favicon/favicon-16.png">
+    <link rel="manifest" href="{{ .Site.BaseURL }}assets/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>

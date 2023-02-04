@@ -1119,7 +1119,7 @@
                         <w-grid-item lg="3">
                             <w-brand 
                                 appearance="${this.appearance}"
-                                logo="/assets/images/logo/logo.svg"
+                                logo="/wellnr--design-system/assets/images/logo/logo.svg"
                                 app="Design System." 
                                 brand="wellnr."></w-brand>
                         </w-grid-item>
