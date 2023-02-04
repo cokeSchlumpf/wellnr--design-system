@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on wellnr.design.system.</title>
-    <link>https://cokeschlumpf.github.io/wellnr-design-system/tags/</link>
+    <link>https://cokeschlumpf.github.io/wellnr--design-system/tags/</link>
     <description>Recent content in Tags on wellnr.design.system.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cokeschlumpf.github.io/wellnr-design-system/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://cokeschlumpf.github.io/wellnr--design-system/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
