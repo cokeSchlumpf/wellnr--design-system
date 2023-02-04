@@ -84,7 +84,7 @@ export class WVerticalNav extends LitElement {
 export class WVerticalNavTitle extends LitElement {
 
     render() {
-        return html`<h3>Some Title</h3>`;
+        return html`<h3><slot></slot></h3>`;
     }
 
 }

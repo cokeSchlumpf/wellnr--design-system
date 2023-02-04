@@ -1,6 +1,11 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
+element: w-{{ .Name }}
+class: W{{ replace .Name "-" "" | title }}
+description: Lorem ipsum dolor.
+draft: false
 ---
 
+{{<rawhtml>}}
+
+{{</rawhtml>}}
