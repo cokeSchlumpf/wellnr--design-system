@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "webpack --mode production --config webpack.prod.js && cd src/docs && hugo && cd ../.. && rm rf ./docs && mv src/docs/public ./docs",
+    "build": "webpack --mode production --config webpack.prod.js && cd src/docs && hugo && cd - && rm -rf ./docs && mv src/docs/public ./docs",
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --watch --config webpack.dev.js"
   },

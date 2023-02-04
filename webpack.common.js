@@ -6,7 +6,7 @@ export default {
   entry: './src/index.js',
   output: {
     filename: '[name].wds.js',
-    path: path.resolve('.', 'docs', 'themes', 'wds', 'static', 'js'),
+    path: path.resolve('.', 'src', 'docs', 'themes', 'wds', 'static', 'js'),
     clean: true
   },
   devServer: {
