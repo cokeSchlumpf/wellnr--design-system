@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        <w-fixed-header spacing="m">
+            {{ partial "header.html" . }}
+
+            <slot name="article" slot="article">
+                {{- block "main" . }}{{- end }}
+            </slot>
+
+            {{ partial "footer.html" . }}
+        </w-fixed-header>
+    </body>
+</html>
