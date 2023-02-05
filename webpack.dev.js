@@ -3,11 +3,5 @@ import common from './webpack.common.js';
 
 export default merge(common, {
   mode: 'development',
-  devServer: {
-    static: './dist',
-  },
-  devtool: 'inline-source-map',
-  optimization: {
-    runtimeChunk: 'single',
-  }
+  devtool: 'inline-source-map'
 });

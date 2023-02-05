@@ -26,9 +26,14 @@ However, it's worth noting that Web Components have a steeper learning curve tha
 
 ## Development
 
-To run a local development server, serve the current directory:
+For local development we use [webpack](https://webpack.js.org/) for packaging the library and [hugo](https://gohugo.io/) to build the documentation page. Both must be started to have an auto-updating webserver.
 
+```bash
+$ npm run watch
 ```
-conda activate
-python -m http.server 
+
+... and in another terminal
+
+```bash
+$ hugo serve
 ```
