@@ -1,6 +1,8 @@
 // Atoms
 import "./js/components/atoms/button/button.js";
 import "./js/components/atoms/code/code.js";
+import "./js/components/atoms/container/container.js";
+import "./js/components/atoms/grid/grid.js";
 import "./js/components/atoms/heading/heading.js";
 import "./js/components/atoms/markdown/markdown.js";
 import "./js/components/atoms/pane/pane.js";
@@ -8,11 +10,6 @@ import "./js/components/atoms/paragraph/paragraph.js";
 import "./js/components/atoms/pre/pre.js";
 import "./js/components/atoms/tabs/tabs.js";
 import "./js/components/atoms/text-input/text-input.js";
-
-// Layout
-import "./js/components/layout/container/container.js";
-import "./js/components/layout/fixed-header/fixed-header.js";
-import "./js/components/layout/grid/grid.js";
 
 // Molecules
 import "./js/components/molecules/css-rules-table/css-rules-table.js";
@@ -27,6 +24,9 @@ import "./js/components/organisms/footer/footer.js";
 import "./js/components/organisms/navbar/navbar.js";
 
 import "./styles.css";
+
+// Templates
+import "./js/components/templates/fixed-header/fixed-header.js";
 
 
 import { LitElement, html } from 'lit';

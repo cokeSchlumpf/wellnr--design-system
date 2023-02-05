@@ -1,0 +1,11 @@
+:root {
+    --w-text-input--color: var(--w-text-color);
+    --w-text-input--transition: all 300ms linear;
+    --w-text-input--padding: var(--w-spacing-300);
+    --w-text-input--border-bottom--width: 2px;
+    --w-text-input--border-bottom--color: var(--w-muted-color);
+    --w-text-input--line-height: var(--w-inputs--size-m--height);
+
+    --w-text-input--invalid--color: var(--w-danger-color);
+    --w-text-input--focus--color: var(--w-primary-color);
+}

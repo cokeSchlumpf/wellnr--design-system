@@ -2,6 +2,8 @@ import { LitElement, html, css } from 'lit';
 
 import { WButton } from '../../atoms/button/button.js';
 import { WCode } from '../../atoms/code/code.js';
+import { WContainer } from '../../atoms/container/container.js';
+import { WGrid } from '../../atoms/grid/grid.js';
 import { WHeading } from '../../atoms/heading/heading.js';
 import { WMarkdown } from '../../atoms/markdown/markdown.js';
 import { WPane } from '../../atoms/pane/pane.js';
@@ -16,6 +18,10 @@ function getComponentClass(className) {
             return WButton;
         case "WCode":
             return WCode;
+        case "WContainer":
+            return WContainer;
+        case "WGrid":
+            return WGrid;
         case "WHeading":
             return WHeading;
         case "WMarkdown":

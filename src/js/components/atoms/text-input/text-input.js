@@ -8,24 +8,26 @@ export class WTextInput extends LitElement {
     static styles = css`
         div {
             display: inline-flex;
-            border-bottom: 2px solid var(--muted-color);
-            transition: all 300ms linear;
+            border-bottom: var(--w-text-input--border-bottom--width) solid var(--w-text-input--border-bottom--color);
+            transition: var(--w-text-input--transition);
         }
 
         input {
             display: border-box;
             border: none;
-            color: var(--text-color);
-            padding: calc(0.7rem - 1px);
+            color: var(--w-text-input--color);
+            line-height: var(--w-text-input--line-height);
+            padding: 0 var(--w-text-input--padding);
+            background-color: transparent;
             flex-grow: 1;
         }
 
         div.invalid {
-            border-bottom-color: var(--danger-color);
+            border-bottom-color: var(--w-text-input--invalid--color);
         }
 
         div.invalid input {
-            color: var(--danger-color);
+            color: var(--w-text-input--invalid--color);
         }
 
         div.block {
@@ -35,7 +37,7 @@ export class WTextInput extends LitElement {
 
         div.focus,
         div.invalid.focus {
-            border-bottom-color: var(--primary-color);
+            border-bottom-color: var(--w-text-input--focus--color);
         }
 
         div input:focus,
@@ -52,7 +54,7 @@ export class WTextInput extends LitElement {
             cursor: pointer;
 
             opacity: 0.7;
-            transition: all 300ms linear;
+            transition: var(--w-text-input--transition);
         }
 
         button.action:hover {
@@ -170,6 +172,7 @@ export class WTextInput extends LitElement {
                     @blur=${this.onBlur}
                     @input=${this.onInput}>
                 </input>
+
                 ${ this.clearable && html`<button class="action clear" @click=${this.clear}></button>` || html`` }
                 ${ this.kind == "password" && html`<button class="action show" @click=${this.toggleVisibility}></button>` || html`` }
             </div>

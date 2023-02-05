@@ -20,13 +20,6 @@
     --w-border-radius-400: 0.8em;
     --w-border-radius-500: 1em;
 
-
-    /*
-     * If increasing column number to a value > 16, /components/layout/grid/grid.js must be adopted as well.
-     */
-    --w-grid-columns: 16;
-    --w-grid-template-columns: repeat(var(--w-grid-columns), 1fr [col]);
-
     --w-inputs--size-s--height: 2em;
     --w-inputs--size-m--height: 3em;
     --w-inputs--size-l--height: 4em;
