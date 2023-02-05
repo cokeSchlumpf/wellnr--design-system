@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+    <title>wellnr.design.system. | Button</title>
+
+    <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-16.png">
+    <link rel="manifest" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head><body>
+        <w-fixed-header spacing="m">
+            <w-navbar appearance="shaded" size="m" slot="header">
+    <a slot="item" href="/introduction">Introduction</a>
+    <a slot="item" href="/foundations">Foundations</a>
+    <a slot="item" href="/components">Components</a>
+</w-navbar>
+
+<w-navbar slot="nav" appearance="shaded" orientation="vertical" size="m">
+    <a slot="item" href="/introduction">Introduction</a>
+    <a slot="item" href="/foundations">Foundations</a>
+    <a slot="item" href="/components">Components</a>
+
+    
+    
+
+    
+        
+        <w-vertical-nav--title slot="item">Atoms</w-vertical-nav--title>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/button/" class="w-active">Button</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/heading/" >Heading</a>
+        
+    
+</w-navbar>
+
+            <slot name="article" slot="article">
+<w-markdown>
+    # Button
+    A button triggers an action, initiated by the user.
+</w-markdown>
+
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+<w-markdown spacing="s">
+    The `appearance` property of a button accepts three possible values: `default`, `outline` and `link`. The appearance has impact on outline and background color.
+</w-markdown>
+
+<w-element-example>
+    <w-button appearance="default">Click me.</w-button>
+    <w-button appearance="outline">Click me.</w-button>
+    <w-button appearance="link">Click me.</w-button>
+</w-element-example>
+
+<w-markdown spacing="s">
+    Intents may influence the coloring of buttons. Available options are: `none` (default), `primary`, `danger` and `success`.
+</w-markdown>
+
+<w-element-example>
+    <div style="margin-bottom: var(--w-spacing-300)">
+        <w-button appearance="default" intent="primary">Primary action.</w-button>
+        <w-button appearance="outline" intent="primary">Primary action.</w-button>
+        <w-button appearance="link" intent="primary">Primary action.</w-button>
+    </div>
+    <div style="margin-bottom: var(--w-spacing-300)">
+        <w-button appearance="default" intent="danger">Dangerous action.</w-button>
+        <w-button appearance="outline" intent="danger">Dangerous action.</w-button>
+        <w-button appearance="link" intent="danger">Dangerous action.</w-button>
+    </div>
+    <div>
+        <w-button appearance="default" intent="success">Positive action.</w-button>
+        <w-button appearance="outline" intent="success">Positive action.</w-button>
+        <w-button appearance="link" intent="success">Positive action.</w-button>
+    </div>
+</w-element-example>
+
+<w-markdown spacing="s">
+    Buttons can be used in different sizes: `s`, `m` and `l`.
+</w-markdown>
+
+<w-element-example>
+    <div style="margin-bottom: var(--w-spacing-300)">
+        <w-button size="s">Small</w-button>
+    </div>
+    <div style="margin-bottom: var(--w-spacing-300)">
+        <w-button size="m">Medium (default)</w-button>
+    </div>
+    <div>
+        <w-button size="l">Large</w-button>
+    </div>
+</w-element-example>
+
+<w-markdown spacing="s">
+    Button may take full available width with `block` attribute.
+</w-markdown>
+
+<w-element-example>
+    <w-button block>Blocked Button</w-button>
+</w-element-example>
+
+<w-markdown spacing="s">
+    Button can be disabled.
+</w-markdown>
+
+<w-element-example>
+    <w-button disabled>Blocked Button</w-button>
+</w-element-example>
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <h2>&ltw-button&gt Tag</h2>
+        <w-element-properties-table className="WButton"></w-element-properties-table>
+
+        <h2>CSS Variables</h2>
+        <w-css-rules-table elementName="w-button"></w-css-rules-table>
+    </w-tabpane-item>
+</w-tabpane>
+
+            </slot>
+
+            <w-footer slot="footer" spacing="m" appearance="light-contrast">
+    <div slot="col-1">&copy; Michael Wellner 2023.</div>
+</w-footer>
+        </w-fixed-header>
+    </body>
+</html>

@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Button</title>
+      <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/button/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/button/</guid>
+      <description>The `appearance` property of a button accepts three possible values: `default`, `outline` and `link`. The appearance has impact on outline and background color. Click me. Click me. Click me. Intents may influence the coloring of buttons. Available options are: `none` (default), `primary`, `danger` and `success`. Primary action. Primary action. Primary action. Dangerous action. Dangerous action. Dangerous action. Positive action. Positive action. Positive action. Buttons can be used in different sizes: `s`, `m` and `l`.</description>
+    </item>
+    
+    <item>
       <title>Heading</title>
       <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/heading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
