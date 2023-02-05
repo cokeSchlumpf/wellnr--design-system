@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+    <title>wellnr.design.system. | Grid</title>
+
+    <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-16.png">
+    <link rel="manifest" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head><body style="opacity: 0">
+        <w-fixed-header spacing="m">
+            <w-navbar appearance="shaded" size="m" slot="header">
+    <a slot="item" href="/introduction">Introduction</a>
+    <a slot="item" href="/foundations">Foundations</a>
+    <a slot="item" href="/components">Components</a>
+</w-navbar>
+
+<w-navbar slot="nav" appearance="shaded" orientation="vertical" size="m">
+    <a slot="item" href="/introduction">Introduction</a>
+    <a slot="item" href="/foundations">Foundations</a>
+    <a slot="item" href="/components">Components</a>
+
+    
+    
+
+    
+        
+        <w-vertical-nav--title slot="item">Atoms</w-vertical-nav--title>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/button/" >Button</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/code/" >Code</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/container/" >Container</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/grid/" class="w-active">Grid</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/heading/" >Heading</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/markdown/" >Markdown</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pane/" >Pane</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/paragraph/" >Paragraph</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pre/" >Pre</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/tabs/" >Tabs</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/text-input/" >Text Input</a>
+        
+    
+</w-navbar>
+
+            <slot name="article" slot="article">
+<w-markdown>
+    # Grid
+    A simple grid system to create responsive layouts.
+</w-markdown>
+
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+<w-markdown spacing="s">
+Use `w-grid` and `w-grid-item` to define grids. The column span can be defined with `col`, `sm`, `lg`, `xl`, `xxl` and `xxxl`. The grid has by default `16` columns.
+</w-markdown>
+
+<w-element-example>
+    <w-grid>
+            <w-grid-item>1<br />Second Row</w-grid-item>
+            <w-grid-item sm="4">2-5</w-grid-item>
+            <w-grid-item>6</w-grid-item>
+            <w-grid-item>7</w-grid-item>
+            <w-grid-item>8</w-grid-item>
+            <w-grid-item>9</w-grid-item>
+            <w-grid-item>10</w-grid-item>
+            <w-grid-item>11</w-grid-item>
+            <w-grid-item>12</w-grid-item>
+            <w-grid-item>13</w-grid-item>
+            <w-grid-item>14</w-grid-item>
+            <w-grid-item>15</w-grid-item>
+            <w-grid-item>16</w-grid-item>
+            <w-grid-item>1</w-grid-item>
+            <w-grid-item>2</w-grid-item>
+            <w-grid-item>3</w-grid-item>
+            <w-grid-item>4</w-grid-item>
+            <w-grid-item>5</w-grid-item>
+            <w-grid-item>6</w-grid-item>
+        </w-grid>
+</w-element-example>
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <w-element-properties className="WGrid"></w-element-properties>
+    </w-tabpane-item>
+</w-tabpane>
+
+            </slot>
+
+            <w-footer slot="footer" spacing="m" appearance="light-contrast">
+    <div slot="col-1">&copy; Michael Wellner 2023.</div>
+</w-footer>
+        </w-fixed-header>
+    </body>
+</html>

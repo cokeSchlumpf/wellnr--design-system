@@ -1,0 +1,7 @@
+:root {
+    /*
+     * If increasing column number to a value > 16, /components/layout/grid/grid.js must be adopted as well.
+     */
+     --w-grid--columns: 16;
+     --w-grid--template-columns: repeat(var(--w-grid--columns), 1fr [col]);
+}

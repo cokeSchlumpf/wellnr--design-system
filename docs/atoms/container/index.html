@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+    <title>wellnr.design.system. | Container</title>
+
+    <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/favicon-16.png">
+    <link rel="manifest" href="https://cokeschlumpf.github.io/wellnr--design-system/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head><body style="opacity: 0">
+        <w-fixed-header spacing="m">
+            <w-navbar appearance="shaded" size="m" slot="header">
+    <a slot="item" href="/introduction">Introduction</a>
+    <a slot="item" href="/foundations">Foundations</a>
+    <a slot="item" href="/components">Components</a>
+</w-navbar>
+
+<w-navbar slot="nav" appearance="shaded" orientation="vertical" size="m">
+    <a slot="item" href="/introduction">Introduction</a>
+    <a slot="item" href="/foundations">Foundations</a>
+    <a slot="item" href="/components">Components</a>
+
+    
+    
+
+    
+        
+        <w-vertical-nav--title slot="item">Atoms</w-vertical-nav--title>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/button/" >Button</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/code/" >Code</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/container/" class="w-active">Container</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/grid/" >Grid</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/heading/" >Heading</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/markdown/" >Markdown</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pane/" >Pane</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/paragraph/" >Paragraph</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pre/" >Pre</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/tabs/" >Tabs</a>
+        
+            
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/text-input/" >Text Input</a>
+        
+    
+</w-navbar>
+
+            <slot name="article" slot="article">
+<w-markdown>
+    # Container
+    A layout primitive to wrap page content.
+</w-markdown>
+
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+<w-markdown spacing="s">
+    The container adopts its size depending the viewport size. Use `fluid` to use the full display size, except on very wide screens.
+</w-markdown>
+<w-element-example>
+    <w-pane spacing="s">
+        <w-container>
+            <div style="background-color: var(--w-background-color-500)">
+                Some content.
+            </div>
+        </w-container>
+    </w-pane>
+    <w-pane spacing="s">
+        <w-container fluid>
+            <div style="background-color: var(--w-background-color-500)">
+                Some content.
+            </div>
+        </w-container>
+    </w-pane>
+</w-element-example>
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <w-element-properties className="WContainer"></w-element-properties>
+    </w-tabpane-item>
+</w-tabpane>
+
+            </slot>
+
+            <w-footer slot="footer" spacing="m" appearance="light-contrast">
+    <div slot="col-1">&copy; Michael Wellner 2023.</div>
+</w-footer>
+        </w-fixed-header>
+    </body>
+</html>
