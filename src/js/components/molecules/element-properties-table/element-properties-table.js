@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 
+import { WButton } from '../../atoms/button/button.js';
 import { WHeading } from '../../atoms/heading/heading.js';
 
 export class WPropertiesTable extends LitElement {
@@ -55,6 +56,8 @@ export class WPropertiesTable extends LitElement {
 
     _getComponentClass() {
         switch (this.className) {
+            case "WButton":
+                return WButton;
             case "WHeading":
                 return WHeading;
         }

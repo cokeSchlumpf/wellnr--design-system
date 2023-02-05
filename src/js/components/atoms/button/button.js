@@ -4,116 +4,151 @@ import { classnames } from '../../../directives/classnames.js';
 export class WButton extends LitElement {
 
     static styles = css`
-        button {
-            display: inline-block;
-            cursor: pointer;
-            transition: all 300ms linear;
+        :host {
+            
         }
 
-        button.primary {
-            border: 1px solid var(--primary-color);
-            background-color: var(--primary-color);
-            color: var(--primary-text-color);
+        :host([intent="primary"]) {
+            --w-button--color: var(--w-button--intent-primary--color);
+            --w-butoon--border-color: var(--w-butoon--intent-primary--border-color);
+            --w-button--text--color: var(--w-button--intent-primary--text--color);
+
+            --w-button--hover--color: var(--w-button--intent-primary--hover--color);
+            --w-button--hover--border-color: var(--w-button--intent-primary--hover--border-color);
+            --w-button--hover--text--color: var(--w-button--intent-primary--hover--text--color);
+
+            --w-button--appearance-outline--text-color: var(--w-button--intent-primary--appearance-outline--text-color);
+            --w-button--appearance-outline--hover--text-color: var(--w-button--intent-primary--appearance-outline--hover--text-color);
         }
 
-        button.primary:hover {
-            background-color: var(--primary-hover-color);
+        :host([intent="success"]) {
+            --w-button--color: var(--w-button--intent-success--color);
+            --w-butoon--border-color: var(--w-butoon--intent-success--border-color);
+            --w-button--text--color: var(--w-button--intent-success--text--color);
+        
+            --w-button--hover--color: var(--w-button--intent-success--hover--color);
+            --w-button--hover--border-color: var(--w-button--intent-success--hover--border-color);
+            --w-button--hover--text--color: var(--w-button--intent-success--hover--text--color);
+        
+            --w-button--appearance-outline--text-color: var(--w-button--intent-success--appearance-outline--text-color);
+            --w-button--appearance-outline--hover--text-color: var(--w-button--intent-success--appearance-outline--hover--text-color);
         }
 
-        button.secondary {
-            border: 1px solid var(--secondary-color);
-            background-color: var(--secondary-color);
-            color: var(--primary-text-color);
+        :host([intent="danger"]) {
+            --w-button--color: var(--w-button--intent-danger--color);
+            --w-butoon--border-color: var(--w-butoon--intent-danger--border-color);
+            --w-button--text--color: var(--w-button--intent-danger--text--color);
+        
+            --w-button--hover--color: var(--w-button--intent-danger--hover--color);
+            --w-button--hover--border-color: var(--w-button--intent-danger--hover--border-color);
+            --w-button--hover--text--color: var(--w-button--intent-danger--hover--text--color);
+        
+            --w-button--appearance-outline--text-color: var(--w-button--intent-danger--appearance-outline--text-color);
+            --w-button--appearance-outline--hover--text-color: var(--w-button--intent-danger--appearance-outline--hover--text-color);
         }
 
-        button.secondary:hover {
-            background-color: var(--secondary-hover-color);
+        :host([size="s"]) {
+            --w-button--line-height: var(--w-button--size-s--line-height)
         }
 
-        button.tertiary {
-            background-color: transparent;
-            border: 1px solid var(--primary-color);
-            color: var(--primary-color);
+        :host([size="l"]) {
+            --w-button--line-height: var(--w-button--size-l--line-height)
         }
 
-        button.tertiary:hover {
-            background-color: var(--primary-color);
-            color: var(--primary-text-color);
+        :host([block]) {
+            display: block;
         }
 
-        button.danger {
-            border: 1px solid var(--danger-color);
-            background-color: var(--danger-color);
-            color: var(--primary-text-color);
-        }
-
-        button.danger:hover {
-            background-color: var(--danger-hover-color);
-        }
-
-        button.ghost {
-            border: 1px solid transparent;
-            background-color: transparent;
-            color: var(--a-color);
-        }
-
-        button.ghost:hover {
-            color: var(--a-hover-color);
-        }
-
-        button.sm {
-            padding: 0.5rem 3rem 0.5rem 0.5rem;
-        }
-
-        button.md {
-            padding: 0.7rem 3rem 0.7rem 0.7rem;
-        }
-
-        button.lg {
-            padding: 1rem 3rem 1rem 1rem;
-        }
-
-        button.xl {
-            padding: 1rem 3rem 2rem 1rem;
-        }
-
-        button.block {
+        :host([block]) button {
             display: block;
             width: 100%;
             text-align: left;
         }
 
-        button:disabled,
-        button.disabled {
-            background: var(--muted-color);
-            border: 1px solid var(--muted-color);
-            cursor: auto;
+        :host([appearance="default"]) button,
+        button {
+            display: inline-block;
+            cursor: pointer;
+            transition: var(--w-button--transition);
+
+            background-color: var(--w-button--color);
+            border: 1px solid var(--w-butoon--border-color);
+            color: var(--w-button--text--color);
+            
+            font-weight: var(--w-button--font-weight);
+            padding: 0 var(--w-button--padding-right) 0px var(--w-button--padding-left);
+            border-radius: var(--w-button--border-radius);
+
+            line-height: var(--w-button--line-height);
+        }
+
+        :host([appearance="default"]) button:hover:not([disabled]),
+        button:hover:not([disabled]) {
+            background-color: var(--w-button--hover--color);
+            color: var(--w-button--hover--text--color);
+        }
+
+        button[disabled] {
+            opacity: 0.6;
+            cursor: default;
+        }
+
+        :host([appearance="outline"]) button {
+            background-color: transparent;
+            color: var(--w-button--appearance-outline--text-color);
+        }
+
+        :host([appearance="outline"]) button:hover:not([disabled]) {
+            border-color: var(--w-button--hover--border-color);
+            color: var(--w-button--appearance-outline--hover--text-color);
+        }
+
+        :host([appearance="link"]) button {
+            background-color: transparent;
+            border: none;
+            padding: 0 var(--w-button--appearance-link--padding-left) 0 var(--w-button--appearance-link--padding-right);
+
+            color: var(--w-button--appearance-outline--text-color);
+        }
+
+        :host([appearance="link"]) button:hover:not([disabled]) {
+            color: var(--w-button--appearance-outline--hover--text-color);
         }
     `;
 
     static properties = {
-        label: { type: String },
-        kind: { type: String }, // options: 'primary', 'secondary', 'tertiary', 'danger', 'ghost'
-        size: { type: String }, // options: 'md', 'sm', 'md', 'lg', 'xl'
-        disabled: { type: Boolean },
-        block: { type: Boolean }
+        appearance: { 
+            type: String,
+            help: "The style in which the button should be displayed. Possible values are: `default`, `outline` and `link`.'"
+        }, 
+        intent: {
+            type: String,
+            help: "Intents may influence the coloring of buttons. Available options are: `none` (default), `primary`, `danger` and `success`."
+        },
+        size: { 
+            type: String,
+            help: "The size of the button. Possible values are `s`, `m` and `l`."
+        },
+        disabled: { 
+            type: Boolean,
+            help: "Indicate that a button is disabled."
+        }
     };
 
     constructor() {
         super();
-        this.label = "Click me!";
-        this.kind = "primary";
-        this.size = "md";
+        this.appearance = "default";
+        this.size = "m";
         this.disabled = false;
-        this.block = false;
     }
 
     render() {
+        console.log(this.disabled);
+
         return html`
             <button 
-                class=${classnames({ [this.kind]: !this.disabled, [this.size]: true, "block": this.block, "disabled": this.disabled })} 
                 ?disabled=${this.disabled}>
-                    ${this.label}
+                    <slot></slot>
             </button>
         `;
     }

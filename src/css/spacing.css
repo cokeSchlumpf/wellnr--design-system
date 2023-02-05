@@ -5,6 +5,8 @@
     --w-spacing-400: 1.2em;
     --w-spacing-500: 1.6em;
     --w-spacing-600: 2em;
+    --w-spacing-700: 2.5em;
+    --w-spacing-800: 3em;
 
     --w-spacing--page--vertical-space: var(--w-spacing-300);
     --w-spacing--page--horizontal-space: var(--w-spacing-600);
@@ -24,4 +26,8 @@
      */
     --w-grid-columns: 16;
     --w-grid-template-columns: repeat(var(--w-grid-columns), 1fr [col]);
+
+    --w-inputs--size-s--height: 2em;
+    --w-inputs--size-m--height: 3em;
+    --w-inputs--size-l--height: 4em;
 }

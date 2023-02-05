@@ -31,8 +31,8 @@ export class WElementExample extends LitElement {
 
                 ${ this.preview ? html`<w-pre content="${this.innerHTML}"></w-pre>` : html`` }
             </w-pane>
-
-            <w-button label="${ this.preview ? 'Hide code' : 'Show code' }" size="sm" @click="${this._bttShowCode_onClick}"></w-button>
+            <div style="height: var(--w-spacing-100)"></div>
+            <w-button size="s" appearance="link" @click="${this._bttShowCode_onClick}">${ this.preview ? 'Hide code' : 'Show code' }</w-button>
         `
     }
 

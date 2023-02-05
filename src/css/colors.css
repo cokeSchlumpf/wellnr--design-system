@@ -71,7 +71,11 @@
    --w-background-color-600: var(--gray200);
    --w-background-color-700: var(--gray300);
    --w-background-color-800: var(--gray400);
-   --w-background-color-900: var(--gray600);
+   --w-background-color-900: var(--gray500);
+   --w-background-color-1000: var(--gray600);
+   --w-background-color-1100: var(--gray700);
+   --w-background-color-1200: var(--gray800);
+   --w-background-color-1300: var(--gray900);
 
    --w-text-color: var(--gray900);
    --w-text-color-300: var(--gray800);
@@ -84,19 +88,49 @@
    --w-muted-color: var(--gray700);
    --w-muted-text-color: var(--gray900);
 
-   --w-primary-color: var(--blue500);
-   --w-primary-hover-color: var(--blue700);
+   --w-primary-color-300: var(--blue400);
+   --w-primary-color-400: var(--blue500);
+   --w-primary-color-500: var(--blue600);
+   --w-primary-color-600: var(--blue700);
+   --w-primary-color-700: var(--blue800);
+   --w-primary-color-800: var(--blue900);
+   --w-primary-color: var(--w-primary-color-400);
+   --w-primary-hover-color: var(--blue600);
 
    --w-primary-text-color: var(--gray200);
    --w-primary-text-color-300: var(--white);
    --w-primary-text-color-400: var(--gray200);
    --w-primary-text-color-500: var(--gray400);
 
-    --w-secondary-color: var(--blue300);
-    --w-secondary-hover-color: var(--blue400);
-    --w-secondary-text-color: var(--white);
+   --w-secondary-color: var( --green600);
+   --w-secondary-hover-color: var( --green700);
+   --w-secondary-text-color: var(--white);
 
-    --w-danger-color: var(--red500);
-    --w-danger-hover-color: var(--red600);
-    --w-danger-text-color: var(--white);
+   --w-danger-color-300: var(--red300);
+   --w-danger-color-400: var(--red300);
+   --w-danger-color-500: var(--red500);
+   --w-danger-color-600: var(--red500);
+   --w-danger-color-700: var(--red600);
+   --w-danger-color-800: var(--red600);
+
+   --w-danger-color: var(--w-danger-color-500);
+   --w-danger-hover-color: var(--w-danger-color-700);
+   --w-danger-text-color: var(--gray200);
+   --w-danger-text-color-300: var(--white);
+   --w-danger-text-color-400: var(--gray200);
+   --w-danger-text-color-500: var(--gray400);
+
+   --w-success-color-300: var(--green300);
+   --w-success-color-400: var(--green400);
+   --w-success-color-500: var(--green500);
+   --w-success-color-600: var(--green600);
+   --w-success-color-700: var(--green700);
+   --w-success-color-800: var(--green800);
+
+   --w-success-color: var(--w-success-color-500);
+   --w-success-hover-color: var(--w-success-color-600);
+   --w-success-text-color: var(--gray200);
+   --w-success-text-color-300: var(--white);
+   --w-success-text-color-400: var(--gray200);
+   --w-success-text-color-500: var(--gray400);
  }
