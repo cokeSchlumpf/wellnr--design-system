@@ -4,6 +4,8 @@ import { classnames } from '../../../directives/classnames.js';
 
 export class WHeading extends LitElement {
 
+    static tagName = "w-heading";
+
     static styles = css`
         .size-100 {
             font-size: var(--w-heading--size-100--font-size);

@@ -3,6 +3,8 @@ import { LitElement, css, html } from 'lit';
 
 export class WParagraph extends LitElement {
 
+    static tagName = "w-paragraph";
+
     static styles = css`
         .size-100 {
             
@@ -10,10 +12,7 @@ export class WParagraph extends LitElement {
     `;
 
     static properties = {
-        is: { 
-            type: String,
-            help: "The type of the tag. Possible values are `h1`, `h2`, `h3`, `h4`, `h5` or `h6`. Default is `h1`."
-        }
+        
     };
 
     constructor() {

@@ -5,7 +5,7 @@
 
     
     
-    <title>wellnr.design.system. | Tags</title>
+    <title>wellnr.design.system. | Text Input</title>
 
     <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
 
@@ -61,14 +61,30 @@
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/tabs/" >Tabs</a>
         
             
-            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/text-input/" >Text Input</a>
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/text-input/" class="w-active">Text Input</a>
         
     
 </w-navbar>
 
             <slot name="article" slot="article">
-<h1>Tags</h1>
+<w-markdown>
+    # Text Input
+    The Text Input component allows user to type in text.
+</w-markdown>
 
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <w-element-properties className="WTextInput"></w-element-properties>
+    </w-tabpane-item>
+</w-tabpane>
 
             </slot>
 

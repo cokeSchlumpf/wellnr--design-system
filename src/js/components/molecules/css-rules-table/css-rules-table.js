@@ -82,7 +82,7 @@ export class WCSSRulesTable extends LitElement {
                             const matches = Array.from(styleSheets[i].cssRules[j].cssText.matchAll(re));
 
                             matches.forEach(match => {
-                                if (match[1].startsWith("--" + this.elementName)) {
+                                if (match[1].startsWith("--" + this.elementName + "--")) {
                                     cssVars[match[1]] = match[2];
                                 }
                             })

@@ -1,9 +1,39 @@
 import { LitElement, html, css } from 'lit';
 
 import { WButton } from '../../atoms/button/button.js';
+import { WCode } from '../../atoms/code/code.js';
 import { WHeading } from '../../atoms/heading/heading.js';
+import { WMarkdown } from '../../atoms/markdown/markdown.js';
+import { WPane } from '../../atoms/pane/pane.js';
+import { WParagraph } from '../../atoms/paragraph/paragraph.js';
+import { WPre } from '../../atoms/pre/pre.js';
+import { WTabs } from '../../atoms/tabs/tabs.js';
+import { WTextInput } from '../../atoms/text-input/text-input.js';
 
-export class WPropertiesTable extends LitElement {
+function getComponentClass(className) {
+    switch (className) {
+        case "WButton":
+            return WButton;
+        case "WCode":
+            return WCode;
+        case "WHeading":
+            return WHeading;
+        case "WMarkdown":
+            return WMarkdown;
+        case "WPane":
+            return WPane;
+        case "WParagraph":
+            return WParagraph;
+        case "WPre":
+            return WPre;
+        case "WTabs":
+            return WTabs;
+        case "WTextInput":
+            return WTextInput;
+    }
+}
+
+export class WProperties extends LitElement {
 
     static styles = css`
         table {
@@ -45,7 +75,7 @@ export class WPropertiesTable extends LitElement {
     static properties = {
         className: {
             type: String,
-            help: "The name of the classname to display the properties."
+            help: "The name of the classname to display the properties and the properties of all related elements."
         }
     };
 
@@ -54,16 +84,21 @@ export class WPropertiesTable extends LitElement {
         this.className = "WHeading";
     }
 
-    _getComponentClass() {
-        switch (this.className) {
-            case "WButton":
-                return WButton;
-            case "WHeading":
-                return WHeading;
-        }
+    _renderClazz(clazz) {
+        return html`
+            <h2>&lt${ clazz.tagName }&gt Tag</h2>
+            ${this._renderProperties(clazz)}
+
+            <h3>Related CSS Variables</h3>
+            <w-css-rules-table elementName="${ clazz.tagName }"></w-css-rules-table>
+        `;
     }
 
     _renderRow(property, settings) {
+        if (settings.hasOwnProperty("attribute") && !settings["attribute"]) {
+            return html``;
+        }
+
         return html`
             <tr>
                 <td>${property}</td>
@@ -73,9 +108,7 @@ export class WPropertiesTable extends LitElement {
         `
     }
 
-    render() {
-        const clazz = this._getComponentClass(this.className);   
-        
+    _renderProperties(clazz) {        
         return html`<table>
             <thead>
                 <tr>
@@ -91,6 +124,15 @@ export class WPropertiesTable extends LitElement {
         </table>`;
     }
 
+    render() {
+        const clazz = getComponentClass(this.className);
+        
+        return html`
+            ${this._renderClazz(clazz)}
+            ${clazz.relatedComponents ? clazz.relatedComponents().map(c => this._renderClazz(c)) : html`` }
+        `;
+    }
+
 }
 
-customElements.define('w-element-properties-table', WPropertiesTable);
+customElements.define('w-element-properties', WProperties);

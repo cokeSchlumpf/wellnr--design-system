@@ -24,7 +24,7 @@ export class WElementExample extends LitElement {
 
     render() {
         return html`
-            <w-pane elevation="500">
+            <w-pane elevation="s">
                 <w-pane spacing="s">
                     <slot></slot>
                 </w-pane>

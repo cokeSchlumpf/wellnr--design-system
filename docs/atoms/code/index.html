@@ -5,7 +5,7 @@
 
     
     
-    <title>wellnr.design.system. | Tags</title>
+    <title>wellnr.design.system. | Code</title>
 
     <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
 
@@ -40,7 +40,7 @@
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/button/" >Button</a>
         
             
-            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/code/" >Code</a>
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/code/" class="w-active">Code</a>
         
             
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/heading/" >Heading</a>
@@ -67,8 +67,30 @@
 </w-navbar>
 
             <slot name="article" slot="article">
-<h1>Tags</h1>
+<w-markdown>
+    # Code
+    The `code` tag is used to define a piece of computer code.
+</w-markdown>
 
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+<w-markdown spacing="s">
+    The code tag is meant for displaying inline code.
+</w-markdown>
+
+<w-element-example>
+    Lorem ipsum dolor <w-code>sit amet</w-code>.
+</w-element-example>
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <w-element-properties className="WCode"></w-element-properties>
+    </w-tabpane-item>
+</w-tabpane>
 
             </slot>
 

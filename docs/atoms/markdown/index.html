@@ -5,7 +5,7 @@
 
     
     
-    <title>wellnr.design.system. | Tags</title>
+    <title>wellnr.design.system. | Markdown</title>
 
     <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
 
@@ -46,7 +46,7 @@
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/heading/" >Heading</a>
         
             
-            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/markdown/" >Markdown</a>
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/markdown/" class="w-active">Markdown</a>
         
             
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pane/" >Pane</a>
@@ -67,8 +67,37 @@
 </w-navbar>
 
             <slot name="article" slot="article">
-<h1>Tags</h1>
+<w-markdown>
+    # Markdown
+    Create HTML content using Markdown syntax.
+</w-markdown>
 
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+<w-markdown spacing="s">
+    The tag renders the content within the element as Markdown. It will at least produce a single paragraph (`&lt;p&gt;`).
+</w-markdown>
+
+<w-element-example>
+    <w-markdown>
+        # Some title
+        Lorem ipsum dolor **sit amet**, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        * At vero eos et accusam et justo duo dolores et ea rebum.
+        * tet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, [sed](./) diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    </w-markdown>
+</w-element-example>
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <w-element-properties className="WMarkdown"></w-element-properties>
+    </w-tabpane-item>
+</w-tabpane>
 
             </slot>
 

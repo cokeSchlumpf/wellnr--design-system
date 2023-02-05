@@ -3,22 +3,29 @@ import { LitElement, css, html } from 'lit';
 
 export class WCode extends LitElement {
 
+    static tagName = "w-code";
+
     static styles = css`
-        .size-100 {
-            
+        code {
+            display: inline-block;
+            font-family: var(--w-font-family-mono);
+            font-weight: var(--w-font-weight-mono-regular);
+            font-size: var(--w-font-size-mono-400);
+        
+            background-color: var(--w-background-color-600);
+            padding: 0 var(--w-spacing-100);
+
+            border: var(--w-border-width--thin) solid var(--w-background-color-800);
+            border-radius: var(--w-border-radius-100);
         }
     `;
 
     static properties = {
-        is: { 
-            type: String,
-            help: "The type of the tag. Possible values are `h1`, `h2`, `h3`, `h4`, `h5` or `h6`. Default is `h1`."
-        }
+
     };
 
     constructor() {
         super();
-        this.is = "h1";
     }
 
     render() {

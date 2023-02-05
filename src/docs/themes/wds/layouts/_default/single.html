@@ -10,11 +10,7 @@
     </w-tabpane-item>
 
     <w-tabpane-item slot="properties" label="Properties">
-        <h2>&lt{{ .Params.element }}&gt Tag</h2>
-        <w-element-properties-table className="{{ .Params.class }}"></w-element-properties-table>
-
-        <h2>CSS Variables</h2>
-        <w-css-rules-table elementName="{{ .Params.element }}"></w-css-rules-table>
+        <w-element-properties className="{{ .Params.class }}"></w-element-properties>
     </w-tabpane-item>
 </w-tabpane>
 {{ end }}

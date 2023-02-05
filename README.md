@@ -37,3 +37,16 @@ $ npm run watch
 ```bash
 $ hugo serve
 ```
+
+### New components
+
+To add new components to the documentation, a new content item in needs to be created with Hugo:
+
+```
+$ cd src/docs
+$ hugo new atoms/code.md
+```
+
+Replace `atoms` with the related component category and `code` with the components tag name (without leading `w-`). 
+
+To display the components properties, extend `src/js/components/molecules/element-properties-table/element-properties-table.js` with and import for the component and update the function `_getComponentClass` to map the component class with its name.

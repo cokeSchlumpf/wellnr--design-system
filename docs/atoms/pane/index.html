@@ -5,7 +5,7 @@
 
     
     
-    <title>wellnr.design.system. | Tags</title>
+    <title>wellnr.design.system. | Pane</title>
 
     <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
 
@@ -49,7 +49,7 @@
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/markdown/" >Markdown</a>
         
             
-            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pane/" >Pane</a>
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pane/" class="w-active">Pane</a>
         
             
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/paragraph/" >Paragraph</a>
@@ -67,8 +67,54 @@
 </w-navbar>
 
             <slot name="article" slot="article">
-<h1>Tags</h1>
+<w-markdown>
+    # Pane
+    A simple layout primitive to compose components and wrap component.
+</w-markdown>
 
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+<w-markdown spacing="s">
+    By default, the Pane does not have any inner spacing (padding). This can be set by using `spacing`.
+</w-markdown>
+
+<w-element-example>
+    <div style="margin-bottom: var(--w-spacing-300)">
+        <w-pane elevation="s">
+            No spacing.
+        </w-pane>
+    </div>
+    <div style="margin-bottom: var(--w-spacing-300)">
+        <w-pane elevation="s" spacing="s">
+            <w-code>spacing="s"</w-code>
+        </w-pane>
+    </div>
+    <div>
+        <w-pane elevation="s" spacing="m">
+            <w-code>spacing="m"</w-code>
+        </w-pane>
+    </div>
+</w-element-example>
+
+<w-markdown spacing="s">
+    The pane can have different elevations (`none`, `s` and `m`) to stand out from surounding content.
+</w-markdown>
+
+<w-element-example>
+    <w-pane elevation="s">
+        <p style="text-align: center; margin: var(--w-spacing-300)">Elevated content</p>
+    </w-pane>
+</w-element-example>
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <w-element-properties className="WPane"></w-element-properties>
+    </w-tabpane-item>
+</w-tabpane>
 
             </slot>
 

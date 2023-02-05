@@ -16,12 +16,78 @@
     </item>
     
     <item>
+      <title>Code</title>
+      <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/code/</guid>
+      <description> The code tag is meant for displaying inline code. Lorem ipsum dolor sit amet. </description>
+    </item>
+    
+    <item>
       <title>Heading</title>
       <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/heading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/heading/</guid>
       <description>The appearance of Heading can be influenced by `is` and `size` attribute. If `size` is not passed, it will be determined based on `is`. H6: Lorem ipsum dolor sit amet, consectetur adipiscing elit. H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. H4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. H3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. H2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/markdown/</guid>
+      <description>The tag renders the content within the element as Markdown. It will at least produce a single paragraph (`&amp;lt;p&amp;gt;`). # Some title Lorem ipsum dolor **sit amet**, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. * At vero eos et accusam et justo duo dolores et ea rebum. * tet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</description>
+    </item>
+    
+    <item>
+      <title>Pane</title>
+      <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/pane/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/pane/</guid>
+      <description>By default, the Pane does not have any inner spacing (padding). This can be set by using `spacing`. No spacing. spacing=&#34;s&#34; spacing=&#34;m&#34; The pane can have different elevations (`none`, `s` and `m`) to stand out from surounding content. Elevated content</description>
+    </item>
+    
+    <item>
+      <title>Paragraph</title>
+      <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/paragraph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/paragraph/</guid>
+      <description> `&amp;lt;w-p&amp;gt;` should be used instead of `&amp;lt;p&amp;gt;` within templates for other components to ensure consistent styling. Because tags within web components are not styled with global CSS theme. </description>
+    </item>
+    
+    <item>
+      <title>Pre</title>
+      <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/pre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/pre/</guid>
+      <description> Code examples can be displayed using `w-pre`. All content of the tag will be interpreted and displayed as code. The componen will also properly dedent the code. C Hello World in Fortran PROGRAM HELLO WRITE (*,100) STOP 100 FORMAT (&#39; Hello World! &#39; /) END </description>
+    </item>
+    
+    <item>
+      <title>Tabs</title>
+      <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/tabs/</guid>
+      <description>Tabs can be displayed in various styles, controlled by `appearance`. Possible values are `contrast`, `light-contrast` and `shaded`. A single tab can be marked as active/ selected using the `active` attribute of a tab. Contrast (default)
+Section A Section B Section C Light Contrast
+Section A Section B Section C Shaded
+Section A Section B Section C ## Tab-Pane To have tabs with inline switching functionality, use `w-tabpane`. It has the same properties as `w-tab`, but its children `w-tabpane-item` except content for tabs.</description>
+    </item>
+    
+    <item>
+      <title>Text Input</title>
+      <link>https://cokeschlumpf.github.io/wellnr--design-system/atoms/text-input/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cokeschlumpf.github.io/wellnr--design-system/atoms/text-input/</guid>
+      <description></description>
     </item>
     
   </channel>

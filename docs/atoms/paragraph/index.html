@@ -5,7 +5,7 @@
 
     
     
-    <title>wellnr.design.system. | Tags</title>
+    <title>wellnr.design.system. | Paragraph</title>
 
     <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
 
@@ -52,7 +52,7 @@
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pane/" >Pane</a>
         
             
-            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/paragraph/" >Paragraph</a>
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/paragraph/" class="w-active">Paragraph</a>
         
             
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pre/" >Pre</a>
@@ -67,8 +67,26 @@
 </w-navbar>
 
             <slot name="article" slot="article">
-<h1>Tags</h1>
+<w-markdown>
+    # Paragraph
+    A simple primitive as replacement for `&lt;p&gt;` within components.
+</w-markdown>
 
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+<w-markdown spacing="s">
+    `&lt;w-p&gt;` should be used instead of `&lt;p&gt;` within templates for other components to ensure consistent styling. Because tags within web components are not styled with global CSS theme.
+</w-markdown>
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <w-element-properties className="WParagraph"></w-element-properties>
+    </w-tabpane-item>
+</w-tabpane>
 
             </slot>
 

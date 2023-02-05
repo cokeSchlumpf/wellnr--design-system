@@ -3,6 +3,8 @@ import { dedent } from '../../../directives/dedent.js';
 
 export class WPre extends LitElement {
 
+    static tagName = "w-pre";
+
     static styles = css`
         :host {
             display: block;

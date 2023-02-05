@@ -3,6 +3,8 @@ import { LitElement, css, html } from 'lit';
 
 export class WTabs extends LitElement {
 
+    static tagName = "w-tabs";
+
     static styles = css`
         :host {
             display: flex;
@@ -79,13 +81,11 @@ export class WTabs extends LitElement {
     static properties = {
         appearance: { 
             type: String,
-            help: "The appearance of the navbar. Possible values are `contrast`, `light-contrast` and `shaded`."
-        },
-        active: {
-            type: Boolean,
-            help: "Whether the tab should be displayed as active."
+            help: "The appearance of the tabs. Possible values are `contrast`, `light-contrast` and `shaded`."
         }
     };
+
+    static relatedComponents = () => [ WTab, WTabPane, WTabPaneItem ]
 
     _handleClick(e) {
         e.preventDefault();
@@ -110,6 +110,8 @@ export class WTabs extends LitElement {
 }
 
 export class WTab extends LitElement {
+
+    static tagName = "w-tab";
 
     static styles = css`
         :host {
@@ -165,6 +167,8 @@ export class WTab extends LitElement {
 
 export class WTabPane extends LitElement {
 
+    static tagName = "w-tabpane";
+
     static properties = {
         active: {
             type: String,
@@ -185,6 +189,8 @@ export class WTabPane extends LitElement {
         const self = this;
 
         this.addEventListener("w-tabs-changed", e => {
+            e.stopPropagation();
+
             if (e.detail.value) {
                 self.active = e.detail.value;
             }
@@ -218,7 +224,7 @@ export class WTabPane extends LitElement {
     }
 
     render() {
-        const tabs = Array.from(this.querySelectorAll("w-tabpane-item"));
+        const tabs = Array.from(this.querySelectorAll(":scope > w-tabpane-item"));
 
         return html`
             <w-tabs appearance="${this.appearance}">
@@ -232,6 +238,8 @@ export class WTabPane extends LitElement {
 }
 
 export class WTabPaneItem extends LitElement {
+
+    static tagName = "w-tabpane-item";
 
     static properties = {
         slot: {

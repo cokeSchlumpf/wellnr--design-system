@@ -5,7 +5,7 @@
 
     
     
-    <title>wellnr.design.system. | Tags</title>
+    <title>wellnr.design.system. | Pre</title>
 
     <script defer="defer" src="https://cokeschlumpf.github.io/wellnr--design-system/js/wds.js"></script>
 
@@ -55,7 +55,7 @@
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/paragraph/" >Paragraph</a>
         
             
-            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pre/" >Pre</a>
+            <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/pre/" class="w-active">Pre</a>
         
             
             <a slot="item" href="https://cokeschlumpf.github.io/wellnr--design-system/atoms/tabs/" >Tabs</a>
@@ -67,8 +67,38 @@
 </w-navbar>
 
             <slot name="article" slot="article">
-<h1>Tags</h1>
+<w-markdown>
+    # Pre
+    Display multiline code (preformatted text).
+</w-markdown>
 
+<w-tabpane appearance="shaded" active="docs">
+    <w-tabpane-item slot="docs" label="Docs">
+        
+
+<w-markdown spacing="s">
+    Code examples can be displayed using `w-pre`. All content of the tag will be interpreted and displayed as code. The componen will also properly dedent the code.
+</w-markdown>
+
+<w-element-example>
+    <w-pre>
+        C     Hello World in Fortran
+
+              PROGRAM HELLO
+              WRITE (*,100)
+              STOP
+          100 FORMAT (' Hello World! ' /)
+              END
+    </w-pre>
+</w-element-example>
+
+
+    </w-tabpane-item>
+
+    <w-tabpane-item slot="properties" label="Properties">
+        <w-element-properties className="WPre"></w-element-properties>
+    </w-tabpane-item>
+</w-tabpane>
 
             </slot>
 

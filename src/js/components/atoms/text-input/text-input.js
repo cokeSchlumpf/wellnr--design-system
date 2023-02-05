@@ -3,6 +3,8 @@ import { classnames } from '../../../directives/classnames.js';
 
 export class WTextInput extends LitElement {
 
+    static tagName = "w-text-input";
+
     static styles = css`
         div {
             display: inline-flex;
@@ -71,15 +73,35 @@ export class WTextInput extends LitElement {
     `;
 
     static properties = {
-        kind: { type: String },
-        value: { type: String },
-        placeholder: { type: String },
+        kind: { 
+            type: String,
+            help: "Specifies the type of the input. Possible values are: `text` (default)  and `password`. The value is passed through as `input.type`."
+        },
+        value: { 
+            type: String,
+            help: "The current value of the field."
+        },
+        placeholder: { 
+            type: String,
+            help: "A placeholder value for the component."
+        },
+        invalid: { 
+            type: Boolean,
+            help: "Indicates that the current value is invalid."
+        },
+        disabled: { 
+            type: Boolean,
+            help: "Indicates that the button is disabled."
+        },
+        block: { 
+            type: Boolean,
+            help: "Expands the size to the full available width."
+        },
 
-        invalid: { type: Boolean },
-        disabled: { type: Boolean },
-        block: { type: Boolean },
-
-        clearable: { type: Boolean },
+        clearable: { 
+            type: Boolean,
+            help: "Whether a clear-button should be provided."
+        },
 
         focus: {
             type: Boolean,

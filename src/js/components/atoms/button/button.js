@@ -3,6 +3,8 @@ import { classnames } from '../../../directives/classnames.js';
 
 export class WButton extends LitElement {
 
+    static tagName = "w-button";
+
     static styles = css`
         :host {
             
@@ -143,8 +145,6 @@ export class WButton extends LitElement {
     }
 
     render() {
-        console.log(this.disabled);
-
         return html`
             <button 
                 ?disabled=${this.disabled}>

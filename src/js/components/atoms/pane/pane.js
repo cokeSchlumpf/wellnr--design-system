@@ -2,6 +2,8 @@ import { LitElement, css, html } from 'lit';
 
 export class WPane extends LitElement {
 
+    static tagName = "w-pane";
+
     static styles = css`
         :host {
             display: block;
@@ -14,18 +16,18 @@ export class WPane extends LitElement {
         }
 
         :host([spacing="m"]) {
-            padding: var(--w-pane--spacing-s--padding);
+            padding: var(--w-pane--spacing-m--padding);
         }
 
-        :host([elevation="500"]) {
-            border: var(--w-pane--elevation-500--border-width) solid var(--w-pane--elevation-500--border-color);
+        :host([elevation="s"]) {
+            border: var(--w-pane--elevation-s--border-width) solid var(--w-pane--elevation-s--border-color);
         }
     `;
 
     static properties = {
         elevation: { 
-            type: Number,
-            help: "Indicates how much the pane should look 'elevated'. Possible values are `400`, `500` and `600`. Default is `500` which means no elevation."
+            type: String,
+            help: "Indicates how much the pane should look 'elevated'. Possible values are `none`, `s` and `m`."
         },
 
         spacing: {
@@ -36,7 +38,7 @@ export class WPane extends LitElement {
 
     constructor() {
         super();
-        this.elevation = 500;
+        this.elevation = "none";
         this.spacing = "none";
     }
 

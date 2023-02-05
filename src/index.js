@@ -65,4 +65,9 @@ export class WDocsWrapper extends LitElement {
 
 }
 
-customElements.define('w-docs-wrapper', WDocsWrapper);
+/*
+ * To avoid flashing unstyled content when loading the page. Use `<body style="opacity: 0">` to hide unstyled content during loading.
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.opacity = "1";
+ }, false);

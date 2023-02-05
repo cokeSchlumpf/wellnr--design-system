@@ -5,6 +5,8 @@ import { dedent } from '../../../directives/dedent.js';
 
 export class WMarkdown extends LitElement {
 
+    static tagName = "w-markdown";
+
     static styles = css`
         :host {
             display: block;
@@ -83,9 +85,22 @@ export class WMarkdown extends LitElement {
             border: var(--w-border-width--thin) solid var(--w-background-color-800);
             border-radius: var(--w-border-radius-100);
         }
+
+        a {
+            text-decoration: none;
+            color: var(--w-primary-color);
+        }
+
+        a:hover {
+            color: var(--w-primary-hover-color);
+        }
         
-        section :first-child {
+        :host :first-child {
             margin-top: 0;
+        }
+
+        :host :last-child {
+            margin-bottom: 0;
         }
     `;
 
@@ -103,6 +118,7 @@ export class WMarkdown extends LitElement {
 
     render() {
         var wrapper = document.createElement('div');
+
         wrapper.innerHTML= markdown(dedent(this.innerHTML).replace(/<\!--.*?-->/g, ""));
         return Array.from(wrapper.childNodes);
     }
