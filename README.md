@@ -32,11 +32,7 @@ For local development we use [webpack](https://webpack.js.org/) for packaging th
 $ npm run watch
 ```
 
-... and in another terminal
-
-```bash
-$ hugo serve
-```
+Then you can open the preview of the Design System at [http://localhost:1313/wellnr--design-system](http://localhost:1313/wellnr--design-system).
 
 ### New components
 
