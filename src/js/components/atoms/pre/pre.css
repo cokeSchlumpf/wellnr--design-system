@@ -1,6 +1,6 @@
 :root {
-    --w-pre--background-color: var(--w-text-color);
-    --w-pre--color: var(--w-background-color);
+    --w-pre--background-color: var(--w-secondary-color--darker);
+    --w-pre--color: var(--w-secondary-color--darker--text-color);
     --w-pre--padding: var(--w-spacing-100) var(--w-spacing-200);
 
     --w-pre--font-family: var(--w-font-family-mono);

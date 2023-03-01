@@ -16,131 +16,50 @@
     /*
      * Default.
      */
-    --w-button--color: var(--w-background-color-800);
-    --w-butoon--border-color: var(--w-background-color-1000);
-    --w-button--text--color: var(--w-text-color-300);
+    --w-button--color: var(--w-secondary-color);
+    --w-butoon--border-color: var(--w-secondary-color--darker);
+    --w-button--text--color: var(--w-secondary-color--darker--text-color);
 
-    --w-button--hover--color: var(--w-background-color-900);
-    --w-button--hover--border-color: var(--w-background-color-1100);
-    --w-button--hover--text--color: var(--w-text-color-500);
+    --w-button--hover--color: var(--w-secondary-color--darker);
+    --w-button--hover--border-color: var(--w-secondary-color--darkest);
+    --w-button--hover--text--color: var(--w-secondary-color--text-color);
 
-    --w-button--appearance-outline--text-color: var(--w-text-color-300);
-    --w-button--appearance-outline--hover--text-color: var(--w-text-color-500);
+    --w-button--appearance-outline--text-color: var(--w-secondary-color);
+    --w-button--appearance-outline--hover--text-color: var(--w-secondary-color--darker);
 
     /*
      * Primary
      */
     --w-button--intent-primary--color: var(--w-primary-color);
-    --w-butoon--intent-primary--border-color: var(--w-primary-color-600);
-    --w-button--intent-primary--text--color: var(--w-primary-text-color-300);
-    --w-button--intent-primary--hover--color: var(--w-primary-hover-color);
-    --w-button--intent-primary--hover--border-color: var(--w-primary-color-800);
-    --w-button--intent-primary--hover--text--color: var(--w-primary-text-color-300);
+    --w-butoon--intent-primary--border-color: var(--w-primary-color--darker);
+    --w-button--intent-primary--text--color: var(--w-primary-color--text-color);
+    --w-button--intent-primary--hover--color: var(--w-primary-color--darker);
+    --w-button--intent-primary--hover--border-color: var(--w-primary-color--darkest);
+    --w-button--intent-primary--hover--text--color: var(--w-primary-color--text-color);
     --w-button--intent-primary--appearance-outline--text-color: var(--w-primary-color);
-    --w-button--intent-primary--appearance-outline--hover--text-color: var(--w-primary-hover-color);
+    --w-button--intent-primary--appearance-outline--hover--text-color: var(--w-primary-color--darker);
 
     /*
      * Success
      */
-    --w-button--intent-success--color: var(--w-success-color);
-    --w-butoon--intent-success--border-color: var(--w-success-color-600);
-    --w-button--intent-success--text--color: var(--w-success-text-color-300);
-    --w-button--intent-success--hover--color: var(--w-success-hover-color);
-    --w-button--intent-success--hover--border-color: var(--w-success-color-800);
-    --w-button--intent-success--hover--text--color: var(--w-success-text-color-300);
-    --w-button--intent-success--appearance-outline--text-color: var(--w-success-color);
-    --w-button--intent-success--appearance-outline--hover--text-color: var(--w-success-hover-color);
+    --w-button--intent-success--color: var(--w-success-color); 
+    --w-butoon--intent-success--border-color: var(--w-success-color--darker); 
+    --w-button--intent-success--text--color: var(--w-success-color--text-color);
+    --w-button--intent-success--hover--color: var(--w-success-color--darker); 
+    --w-button--intent-success--hover--border-color: var(--w-success-color--darkest); 
+    --w-button--intent-success--hover--text--color: var(--w-success-color--text-color); 
+    --w-button--intent-success--appearance-outline--text-color: var(--w-success-color); 
+    --w-button--intent-success--appearance-outline--hover--text-color: var(--w-success-color--darker); 
 
     /*
      * Danger
      */
     --w-button--intent-danger--color: var(--w-danger-color);
-    --w-butoon--intent-danger--border-color: var(--w-danger-color-600);
-    --w-button--intent-danger--text--color: var(--w-danger-text-color-300);
-    --w-button--intent-danger--hover--color: var(--w-danger-hover-color);
-    --w-button--intent-danger--hover--border-color: var(--w-danger-color-800);
-    --w-button--intent-danger--hover--text--color: var(--w-danger-text-color-300);
+    --w-butoon--intent-danger--border-color: var(--w-danger-color--darker);
+    --w-button--intent-danger--text--color: var(--w-danger-color--text-color);
+    --w-button--intent-danger--hover--color: var(--w-danger-color--darker);
+    --w-button--intent-danger--hover--border-color: var(--w-danger-color--darkest);
+    --w-button--intent-danger--hover--text--color: var(--w-danger-color--text-color);
     --w-button--intent-danger--appearance-outline--text-color: var(--w-danger-color);
-    --w-button--intent-danger--appearance-outline--hover--text-color: var(--w-danger-hover-color);
-}
-
-
-button.primary {
-border: 1px solid var(--primary-color);
-background-color: var(--primary-color);
-color: var(--primary-text-color);
-}
-
-button.primary:hover {
-background-color: var(--primary-hover-color);
-}
-
-button.secondary {
-border: 1px solid var(--secondary-color);
-background-color: var(--secondary-color);
-color: var(--primary-text-color);
-}
-
-button.secondary:hover {
-background-color: var(--secondary-hover-color);
-}
-
-button.tertiary {
-background-color: transparent;
-border: 1px solid var(--primary-color);
-color: var(--primary-color);
-}
-
-button.tertiary:hover {
-background-color: var(--primary-color);
-color: var(--primary-text-color);
-}
-
-button.danger {
-border: 1px solid var(--danger-color);
-background-color: var(--danger-color);
-color: var(--primary-text-color);
-}
-
-button.danger:hover {
-background-color: var(--danger-hover-color);
-}
-
-button.ghost {
-border: 1px solid transparent;
-background-color: transparent;
-color: var(--a-color);
-}
-
-button.ghost:hover {
-color: var(--a-hover-color);
-}
-
-button.sm {
-padding: 0.5rem 3rem 0.5rem 0.5rem;
-}
-
-button.md {
-padding: 0.7rem 3rem 0.7rem 0.7rem;
-}
-
-button.lg {
-padding: 1rem 3rem 1rem 1rem;
-}
-
-button.xl {
-padding: 1rem 3rem 2rem 1rem;
-}
-
-button.block {
-display: block;
-width: 100%;
-text-align: left;
-}
-
-button:disabled,
-button.disabled {
-background: var(--muted-color);
-border: 1px solid var(--muted-color);
-cursor: auto;
+    --w-button--intent-danger--appearance-outline--hover--text-color: var(--w-danger-color--darker);
 }

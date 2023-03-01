@@ -17,6 +17,9 @@ draft: false
     <w-pane spacing="s">
         <w-text-input placeholder="Enter some text" value="Some content" block></w-text-input>
     </w-pane>
+    <w-pane spacing="s">
+        <w-text-input kind="password" placeholder="Password" block value="s3cre!"></w-text-input>
+    </w-pane>
 </w-element-example>
 
 <w-markdown spacing="s">
