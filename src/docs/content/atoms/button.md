@@ -69,5 +69,7 @@ draft: false
 
 <w-element-example>
     <w-button disabled>Blocked Button</w-button>
+    <w-button intent="primary" disabled>Primary Blocked Button</w-button>
+    <w-button intent="success" appearance="outline" disabled>Primary Blocked Button</w-button>
 </w-element-example>
 {{</rawhtml>}}

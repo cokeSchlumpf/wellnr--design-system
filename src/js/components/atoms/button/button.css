@@ -1,30 +1,39 @@
 :root {
     --w-button--transition: all 100ms linear;
 
+    --w-button--font-family: var(--w-font-family-text);
+    --w-button--font-size: var(--w-font-size-text-400);
     --w-button--font-weight: var(--w-font-weight-text-semibold);
+
     --w-button--padding-left: var(--w-spacing-300);
-    --w-button--padding-right: var(--w-spacing-800);
-    --w-button--border-radius: var(--w-border-radius-100);
+    --w-button--padding-right: var(--w-spacing-300);
+
+    --w-button--border-radius: var(--w-border-radius-200);
+    --w-button--border-width: var(--w-border-width--regular);
+
     --w-button--line-height: var(--w-inputs--size-m--height);
 
     --w-button--appearance-link--padding-left: var(--w-spacing-300);
     --w-button--appearance-link--padding-right: var(--w-spacing-300);
 
     --w-button--size-s--line-height: var(--w-inputs--size-s--height);
+    --w-button--size-s--font-size: var(--w-font-size-text-300);
+
     --w-button--size-l--line-height: var(--w-inputs--size-l--height);
+    --w-button--size-l--font-size: var(--w-font-size-text-500);
 
     /*
      * Default.
      */
-    --w-button--color: var(--w-secondary-color);
-    --w-butoon--border-color: var(--w-secondary-color--darker);
-    --w-button--text--color: var(--w-secondary-color--darker--text-color);
+    --w-button--color: var(--w-secondary-color--lightest);
+    --w-butoon--border-color: var(--w-secondary-color--lighter);
+    --w-button--text--color: var(--w-secondary-color--lighter--text-color);
 
-    --w-button--hover--color: var(--w-secondary-color--darker);
-    --w-button--hover--border-color: var(--w-secondary-color--darkest);
+    --w-button--hover--color: var(--w-secondary-color);
+    --w-button--hover--border-color: var(--w-secondary-color--darker);
     --w-button--hover--text--color: var(--w-secondary-color--text-color);
 
-    --w-button--appearance-outline--text-color: var(--w-secondary-color);
+    --w-button--appearance-outline--text-color: var(--w-secondary-color--lightest);
     --w-button--appearance-outline--hover--text-color: var(--w-secondary-color--darker);
 
     /*

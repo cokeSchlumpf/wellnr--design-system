@@ -119,7 +119,10 @@ export class WMarkdown extends LitElement {
     render() {
         var wrapper = document.createElement('div');
 
-        wrapper.innerHTML= markdown(dedent(this.innerHTML).replace(/<\!--.*?-->/g, ""));
+        wrapper.innerHTML= markdown(dedent(this.innerHTML)
+            .replace(/<\!--.*?-->/g, ""))
+            .replaceAll("<code", "<w-code")
+            .replaceAll("</code", "</w-code");
         return Array.from(wrapper.childNodes);
     }
 

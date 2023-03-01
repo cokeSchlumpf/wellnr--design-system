@@ -63,6 +63,8 @@
   /*
    * Text colors.
    */
+  --w-text-color--lightest: #60626b;
+  --w-text-color--lighter: #3d4157;
   --w-text-color: #101840;
   --w-text-color--darker: #000000;
 

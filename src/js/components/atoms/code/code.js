@@ -8,15 +8,15 @@ export class WCode extends LitElement {
     static styles = css`
         code {
             display: inline-block;
-            font-family: var(--w-font-family-mono);
-            font-weight: var(--w-font-weight-mono-regular);
-            font-size: var(--w-font-size-mono-400);
+            font-family: var(--w-code--font-family);
+            font-weight: var(--w-code--font-weight);
+            font-size: var(--w-code--font-size);
         
-            background-color: var(--w-background-color-600);
-            padding: 0 var(--w-spacing-100);
+            background-color: var(--w-code--background-color);
+            padding: var(--w-code--padding);
 
-            border: var(--w-border-width--thin) solid var(--w-background-color-800);
-            border-radius: var(--w-border-radius-100);
+            border: var(--w-code--border);
+            border-radius: var(--w-code--border-radius);
         }
     `;
 

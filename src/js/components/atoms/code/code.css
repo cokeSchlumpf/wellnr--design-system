@@ -1,0 +1,11 @@
+:root {
+    --w-code--font-family: var(--w-font-family-mono);
+    --w-code--font-weight: var(--w-font-weight-mono-regular);
+    --w-code--font-size: var(--w-font-size-mono-400);
+
+    --w-code--background-color: var(--w-background-color--darkest);
+    --w-code--padding: 0 var(--w-spacing-100);
+
+    --w-code--border: var(--w-border-width--thin) solid var(--w-secondary-color--lightest);
+    --w-code--border-radius: var(--w-border-radius-100);
+}

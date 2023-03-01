@@ -7,7 +7,7 @@ export class WButton extends LitElement {
 
     static styles = css`
         :host {
-            
+
         }
 
         :host([intent="primary"]) {
@@ -50,11 +50,13 @@ export class WButton extends LitElement {
         }
 
         :host([size="s"]) {
-            --w-button--line-height: var(--w-button--size-s--line-height)
+            --w-button--line-height: var(--w-button--size-s--line-height);
+            --w-button--font-size: var(--w-button--size-s--font-size);
         }
 
         :host([size="l"]) {
-            --w-button--line-height: var(--w-button--size-l--line-height)
+            --w-button--line-height: var(--w-button--size-l--line-height);
+            --w-button--font-size: var(--w-button--size-l--font-size);
         }
 
         :host([block]) {
@@ -74,9 +76,11 @@ export class WButton extends LitElement {
             transition: var(--w-button--transition);
 
             background-color: var(--w-button--color);
-            border: 1px solid var(--w-butoon--border-color);
+            border: var(--w-button--border-width) solid var(--w-butoon--border-color);
             color: var(--w-button--text--color);
             
+            font-family: var(--w-button--font-family);
+            font-size: var(--w-button--font-size);
             font-weight: var(--w-button--font-weight);
             padding: 0 var(--w-button--padding-right) 0px var(--w-button--padding-left);
             border-radius: var(--w-button--border-radius);
@@ -98,11 +102,6 @@ export class WButton extends LitElement {
         :host([appearance="outline"]) button {
             background-color: transparent;
             color: var(--w-button--appearance-outline--text-color);
-        }
-
-        :host([appearance="outline"]) button:hover:not([disabled]) {
-            border-color: var(--w-button--hover--border-color);
-            color: var(--w-button--appearance-outline--hover--text-color);
         }
 
         :host([appearance="link"]) button {

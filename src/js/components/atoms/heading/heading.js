@@ -53,12 +53,12 @@ export class WHeading extends LitElement {
         }
 
         h5 {
-            color: var(--w-muted-color);
+            color: var(--w-text-color--lighter);
         }
         
         h6 {
             font-weight: var(--w-font-weight-text-regular);
-            color: var(--w-muted-color);
+            color: var(--w-text-color--lightest);
             text-decoration: underline;
             
         }

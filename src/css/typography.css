@@ -1,5 +1,5 @@
 :root {
-    --w-font-family-text: Arial, system-ui, sans-serif;
+    --w-font-family-text: "Arial", "system-ui", "sans-serif";
     --w-font-weight-text-thin: 300;
     --w-font-weight-text-regular: 400;
     --w-font-weight-text-semibold: 600;
