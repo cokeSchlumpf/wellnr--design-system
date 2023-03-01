@@ -8,8 +8,9 @@ export class WTextInput extends LitElement {
     static styles = css`
         div {
             display: inline-flex;
-            border-bottom: var(--w-text-input--border-bottom--width) solid var(--w-text-input--border-bottom--color);
+            border: var(--w-text-input--border-bottom--width) solid var(--w-text-input--border-bottom--color);
             transition: var(--w-text-input--transition);
+            background-color: var(--text-input)
         }
 
         input {

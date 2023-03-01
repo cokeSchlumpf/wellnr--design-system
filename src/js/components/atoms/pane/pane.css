@@ -4,5 +4,5 @@
     --w-pane--spacing-m--padding: var(--w-spacing-400);
 
     --w-pane--elevation-s--border-width: var(--w-border-width--thin);
-    --w-pane--elevation-s--border-color: var(--w-background-color-800);
+    --w-pane--elevation-s--border-color: var(--w-muted-color);
 }

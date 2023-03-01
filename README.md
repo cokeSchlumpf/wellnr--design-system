@@ -35,6 +35,7 @@ $ npm run watch
 ... and in another terminal
 
 ```bash
+$ cd src/docs
 $ hugo serve
 ```
 

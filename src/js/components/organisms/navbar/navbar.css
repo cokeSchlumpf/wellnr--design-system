@@ -8,6 +8,6 @@
     --w-navbar--contrast--background-color: var(--w-primary-color);
     
     --w-navbar--shaded--background-color: var(--w-background-color);
-    --w-navbar--shaded--border-bottom--color: var(--w-background-color-800);
+    --w-navbar--shaded--border-bottom--color: var(--w-muted-color);
     --w-navbar--shaded--border-bottom--width: var(--w-border-width--thin);
 }
